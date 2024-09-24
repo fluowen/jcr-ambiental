@@ -1,20 +1,7 @@
-// Carrossel Automático
-let slideIndex = 0;
-const slides = document.querySelectorAll('.carousel-item');
+// O carrossel horizontal usa a rolagem natural do navegador, sem necessidade de JavaScript adicional,
+// mas caso queira adicionar navegação automática, você pode implementar algo como:
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.classList.remove('active');
-        if (i === index) {
-            slide.classList.add('active');
-        }
-    });
-}
-
-function nextSlide() {
-    slideIndex = (slideIndex + 1) % slides.length;
-    showSlide(slideIndex);
-}
-
-// Alterar slides a cada 5 segundos
-setInterval(nextSlide, 5000);
+let scrollInterval = setInterval(() => {
+    const carousel = document.querySelector('.carousel');
+    carousel.scrollBy({ left: window.innerWidth, behavior: 'smooth' });
+}, 5000); // Mudar para o próximo slide a cada 5 segundos

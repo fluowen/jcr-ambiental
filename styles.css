@@ -7,74 +7,99 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #fff;
     background-color: #000;
+    color: #fff;
+    scroll-behavior: smooth; /* Rolagem suave */
 }
 
-/* Configuração geral para as seções */
+/* Estilos Gerais das Seções */
 .section {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 100vh; /* Tela cheia */
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    z-index: 1;
+    overflow: hidden;
 }
 
-/* Estilos para o Carrossel */
-.carousel {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-.carousel-item {
+/* Inserindo uma camada transparente opaca de 50% */
+.section::before {
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada opaca de 50% */
+    z-index: 1; /* Camada entre a imagem de fundo e o texto */
 }
 
-.carousel-item.active {
-    opacity: 1;
+/* Seção 1 - Header (Exemplo de imagem de fundo) */
+header.section {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem0.jpg'); /* Substitua pelo URL da sua imagem */
 }
 
-.carousel-image {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+/* Seção 2 - Missão e Valores Carrossel */
+#missao-valores {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+/* Missão - Imagem de Fundo */
+#missao-valores .carousel-item:first-child {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem1.jpg'); /* Substitua pelo URL da sua imagem */
+}
+
+/* Valores - Imagem de Fundo */
+#missao-valores .carousel-item:nth-child(2) {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem2.jpg'); /* Substitua pelo URL da sua imagem */
+}
+
+/* Seção 3 - Fundador */
+#founder {
+    background-image: url('https://seusite.com/imagem_fundador.jpg'); /* Substitua pelo URL da sua imagem */
+}
+
+/* Seção 4 - Time */
+#time {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem5.jpg'); /* Substitua pelo URL da sua imagem */
 }
 
 .text-container {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Texto sobre a camada opaca */
+    text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    width: 80%;
     color: #fff;
 }
 
-.text-container h2 {
+h1, h2 {
     font-size: 3em;
-    margin-bottom: 20px;
+    font-weight: bold;
 }
 
-.text-container p {
+p, ul {
     font-size: 1.2em;
     line-height: 1.8;
 }
 
+ul {
+    list-style-type: none;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Footer */
 footer {
-    background-color: #848484;
+    background-color: #333;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -86,5 +111,9 @@ footer p {
 
 footer a {
     color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
     text-decoration: underline;
 }

@@ -11,13 +11,6 @@
     <meta name="keywords" content="consultoria, saúde, meio ambiente, segurança, sustentabilidade, SSMA, gestão de riscos, consultoria ambiental">
     <meta name="author" content="JCR Ambiental">
     
-    <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="JCR Ambiental - A Melhor Consultoria em Saúde, Meio Ambiente e Segurança">
-    <meta property="og:description" content="Consultoria especializada em saúde, meio ambiente e segurança do trabalho.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seusite.com">
-    <meta property="og:image" content="https://seusite.com/imagem_compartilhamento.jpg">
-    
     <!-- Link para o CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -29,17 +22,26 @@
         </div>
     </header>
 
-    <section id="missao" class="section">
-        <div class="text-container">
-            <h2>Missão</h2>
-            <p>Transformar ambientes de trabalho e comunidades através do cuidado genuíno em saúde, segurança e meio ambiente...</p>
-        </div>
-    </section>
-
-    <section id="visao" class="section">
-        <div class="text-container">
-            <h2>Visão</h2>
-            <p>Ser a principal referência no Brasil em consultoria de saúde, segurança e meio ambiente...</p>
+    <!-- Seção combinada com carrossel de Missão e Visão -->
+    <section id="missao-visao" class="section">
+        <div class="carousel">
+            <!-- Slide 1 - Missão -->
+            <div class="carousel-item active">
+                <img src="https://seusite.com/imagem_missao.jpg" alt="Missão da JCR Ambiental" class="carousel-image">
+                <div class="text-container">
+                    <h2>Missão</h2>
+                    <p>Transformar ambientes de trabalho e comunidades através do cuidado genuíno em saúde, segurança e meio ambiente...</p>
+                </div>
+            </div>
+            
+            <!-- Slide 2 - Visão -->
+            <div class="carousel-item">
+                <img src="https://seusite.com/imagem_visao.jpg" alt="Visão da JCR Ambiental" class="carousel-image">
+                <div class="text-container">
+                    <h2>Visão</h2>
+                    <p>Ser a principal referência no Brasil em consultoria de saúde, segurança e meio ambiente...</p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -77,5 +79,8 @@
             <p>© 2024 JCR Ambiental. Todos os direitos reservados.</p>
         </div>
     </footer>
+
+    <!-- JavaScript para o Carrossel -->
+    <script src="script.js"></script>
 </body>
 </html>

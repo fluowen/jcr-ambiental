@@ -18,76 +18,59 @@ body {
     height: 100vh;
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;  /* Parallax effect */
+    background-attachment: fixed;
     z-index: 1;
 }
 
-/* Adiciona a camada transparente opaca */
-.section::before {
-    content: '';
+/* Estilos para o Carrossel */
+.carousel {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.carousel-item {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Camada preta com 50% de transparência */
-    z-index: 2; /* Posiciona a camada acima da imagem */
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
 }
 
-/* Imagens de fundo */
-header.section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem0.jpg');
+.carousel-item.active {
+    opacity: 1;
 }
 
-#missao.section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem1.jpg');
+.carousel-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-#visao.section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem2.jpg');
-}
-
-#valores.section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem3.jpg');
-}
-
-#founder.section {
-    background-image: url('https://seusite.com/imagem_fundador.jpg');
-}
-
-#time.section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem5.jpg');
-}
-
-/* Posicionamento e estilo do texto sobreposto */
 .text-container {
     position: relative;
-    z-index: 3; /* Posiciona o texto acima da camada opaca */
+    z-index: 2;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
     padding: 20px;
     width: 80%;
+    color: #fff;
 }
 
-.text-container h1, .text-container h2 {
+.text-container h2 {
     font-size: 3em;
     margin-bottom: 20px;
 }
 
-.text-container p, .text-container ul {
+.text-container p {
     font-size: 1.2em;
     line-height: 1.8;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-ul li {
-    margin-bottom: 10px;
 }
 
 footer {

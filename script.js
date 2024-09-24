@@ -17,4 +17,4 @@ function nextSlide() {
 }
 
 // Alterar slides a cada 2 segundos
-setInterval(nextSlide, 2000);
+setInterval(nextSlide, 5000);

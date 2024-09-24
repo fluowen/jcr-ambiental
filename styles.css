@@ -7,69 +7,58 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    color: #fff;
+    background-color: #000;
 }
 
-.container {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-header {
-    background-color: #5EB71B;
-    color: white;
-    text-align: center;
-    padding: 60px 0;
-}
-
-header .logo {
-    width: 150px;
-    height: auto;
-}
-
-header h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-}
-
-header p {
-    font-size: 1.2em;
-    font-weight: 300;
-}
-
+/* Configuração geral para as seções */
 .section {
     position: relative;
     width: 100%;
-    height: 500px;
-    overflow: hidden;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;  /* Parallax effect */
 }
 
-.background-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0.7;
+header.section {
+    background-image: url('https://seusite.com/imagem_header.jpg');
 }
 
+#missao.section {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem1.jpg');
+}
+
+#visao.section {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem2.jpg');
+}
+
+#valores.section {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem3.jpg');
+}
+
+#founder.section {
+    background-image: url('https://seusite.com/imagem_fundador.jpg');
+}
+
+#time.section {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem5.jpg');
+}
+
+/* Posicionamento e estilo do texto sobreposto */
 .text-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
     text-align: center;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6); /* Fundo escuro semitransparente para destacar o texto */
     width: 80%;
 }
 
-.text-container h2 {
-    font-size: 2.5em;
+.text-container h1, .text-container h2 {
+    font-size: 3em;
     margin-bottom: 20px;
 }
 
@@ -92,7 +81,6 @@ footer {
     color: white;
     text-align: center;
     padding: 20px 0;
-    margin-top: 40px;
 }
 
 footer p {

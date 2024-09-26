@@ -1,7 +1,18 @@
-// O carrossel horizontal usa a rolagem natural do navegador, sem necessidade de JavaScript adicional,
-// mas caso queira adicionar navegação automática, você pode implementar algo como:
+// JavaScript para controlar o carrossel entre Missão e Visão
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item');
+const totalSlides = slides.length;
 
-let scrollInterval = setInterval(() => {
-    const carousel = document.querySelector('.carousel');
-    carousel.scrollBy({ left: window.innerWidth, behavior: 'smooth' });
-}, 5000); // Mudar para o próximo slide a cada 5 segundos
+function showSlide(index) {
+    slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+    });
+}
+
+function nextSlide() {
+    currentSlide = (currentSlide + 1) % totalSlides;
+    showSlide(currentSlide);
+}
+
+// Mudar de slide a cada 5 segundos
+setInterval(nextSlide, 5000);

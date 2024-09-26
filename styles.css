@@ -1,3 +1,6 @@
+/* Importando a fonte Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,14 +8,13 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
     background-color: #000;
     color: #fff;
     scroll-behavior: smooth; /* Rolagem suave */
 }
 
-/* Estilos Gerais das Seções */
+/* Seções */
 .section {
     position: relative;
     width: 100%;
@@ -23,7 +25,6 @@ body {
     overflow: hidden;
 }
 
-/* Inserindo uma camada transparente opaca de 50% */
 .section::before {
     content: '';
     position: absolute;
@@ -31,54 +32,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Camada opaca de 50% */
-    z-index: 1; /* Camada entre a imagem de fundo e o texto */
-}
-
-/* Seção 1 - Header (Exemplo de imagem de fundo) */
-header.section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem0.jpg'); /* Substitua pelo URL da sua imagem */
-}
-
-/* Seção 2 - Missão e Valores Carrossel */
-#missao-valores {
-    display: flex;
-    flex-direction: row;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-}
-
-/* Missão - Imagem de Fundo */
-#missao-valores .carousel-item:first-child {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem1.jpg'); /* Substitua pelo URL da sua imagem */
-}
-
-/* Valores - Imagem de Fundo */
-#missao-valores .carousel-item:nth-child(2) {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem2.jpg'); /* Substitua pelo URL da sua imagem */
-}
-
-/* Seção 3 - Fundador */
-#founder {
-    background-image: url('https://seusite.com/imagem_fundador.jpg'); /* Substitua pelo URL da sua imagem */
-}
-
-/* Seção 4 - Time */
-#time {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/Imagem5.jpg'); /* Substitua pelo URL da sua imagem */
+    background-color: rgba(0, 0, 0, 0.5); /* Camada transparente */
+    z-index: 1;
 }
 
 .text-container {
     position: relative;
-    z-index: 2; /* Texto sobre a camada opaca */
+    z-index: 2; /* Texto sobre a camada */
+    padding: 20px;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
 }
 
-h1, h2 {
+h2 {
     font-size: 3em;
     font-weight: bold;
 }
@@ -94,7 +59,46 @@ ul {
 
 ul li {
     margin-bottom: 10px;
+    color: #92e016;
     font-weight: bold;
+}
+
+/* Carrossel */
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel-item {
+    min-width: 100%;
+    scroll-snap-align: start;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Founder Section */
+#founder .left, #founder .right {
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+
+#founder .right {
+    text-align: right;
+    padding-right: 5%;
+}
+
+.info h3 {
+    color: #92e016;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.info ul li {
+    color: #ffffff;
+    font-size: 1.1em;
+    margin-bottom: 10px;
 }
 
 /* Footer */

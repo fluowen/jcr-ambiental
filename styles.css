@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: #000;
@@ -48,7 +52,7 @@ body {
 }
 
 h2 {
-    font-size: 3em;
+    font-size: 3em; /* Tamanho ajustado para telas grandes */
     font-weight: bold;
 }
 
@@ -110,4 +114,97 @@ footer {
 }
 
 footer p {
-    font-size: 0.9
+    font-size: 0.9em;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* ------------------- ESTILOS RESPONSIVOS ------------------- */
+
+/* Para smartphones e tablets */
+@media (max-width: 768px) {
+
+    h2 {
+        font-size: 2.5em; /* Ajuste para telas menores */
+    }
+
+    p, ul {
+        font-size: 1em; /* Ajuste de tamanho de fonte para telas menores */
+    }
+
+    .text-container {
+        padding: 10px;
+        text-align: left; /* Textos alinhados à esquerda em telas menores */
+    }
+
+    /* Altura de seções adaptada para telas menores */
+    .section {
+        height: 90vh;
+        background-attachment: scroll; /* Desativa o parallax em dispositivos móveis */
+    }
+
+    /* Ajuste no carrossel para seções menores */
+    .carousel-item {
+        height: 90vh;
+    }
+
+    /* Footer responsivo */
+    footer p {
+        font-size: 0.8em;
+    }
+}
+
+/* Para laptops e desktops */
+@media (min-width: 769px) and (max-width: 1200px) {
+
+    h2 {
+        font-size: 2.8em; /* Ajuste de fonte para laptops */
+    }
+
+    p, ul {
+        font-size: 1.1em;
+    }
+
+    .section {
+        height: 95vh;
+    }
+
+    .carousel-item {
+        height: 95vh;
+    }
+
+    footer p {
+        font-size: 0.85em;
+    }
+}
+
+/* Para desktops grandes */
+@media (min-width: 1201px) {
+
+    h2 {
+        font-size: 3.5em; /* Ajuste para telas grandes */
+    }
+
+    p, ul {
+        font-size: 1.3em;
+    }
+
+    .section {
+        height: 100vh;
+    }
+
+    .carousel-item {
+        height: 100vh;
+    }
+
+    footer p {
+        font-size: 0.9em;
+    }
+}

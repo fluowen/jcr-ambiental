@@ -21,10 +21,11 @@ body {
     height: 100vh; /* Tela cheia */
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: fixed; /* Efeito Parallax */
     overflow: hidden;
 }
 
+/* Camada opaca sobre as imagens */
 .section::before {
     content: '';
     position: absolute;
@@ -32,15 +33,18 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Camada transparente */
+    background-color: rgba(0, 0, 0, 0.5); /* Camada opaca */
     z-index: 1;
 }
 
 .text-container {
     position: relative;
-    z-index: 2; /* Texto sobre a camada */
+    z-index: 2; /* Texto sobre a camada opaca */
     padding: 20px;
     text-align: center;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 h2 {
@@ -63,42 +67,38 @@ ul li {
     font-weight: bold;
 }
 
-/* Carrossel */
+/* Carrossel Horizontal */
 .carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-wrapper {
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
+    width: 200%; /* O dobro da largura da tela para 2 slides */
+    transition: transform 1s ease-in-out; /* Animação suave */
 }
 
 .carousel-item {
-    min-width: 100%;
-    scroll-snap-align: start;
+    width: 100%;
+    height: 100vh;
     background-size: cover;
     background-position: center;
+    position: relative;
 }
 
-/* Founder Section */
-#founder .left, #founder .right {
-    width: 50%;
-    float: left;
+/* Camada opaca sobre os slides do carrossel */
+.carousel-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-}
-
-#founder .right {
-    text-align: right;
-    padding-right: 5%;
-}
-
-.info h3 {
-    color: #92e016;
-    font-size: 2em;
-    margin-bottom: 15px;
-}
-
-.info ul li {
-    color: #ffffff;
-    font-size: 1.1em;
-    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Camada opaca */
+    z-index: 1;
 }
 
 /* Footer */
@@ -110,14 +110,4 @@ footer {
 }
 
 footer p {
-    font-size: 0.9em;
-}
-
-footer a {
-    color: white;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
+    font-size: 0.9

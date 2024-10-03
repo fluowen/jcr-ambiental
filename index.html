@@ -54,16 +54,19 @@
             margin-right: 10px;
         }
 
-        .methodology-section,
-        .clients-section {
-            padding: 50px 0;
-            text-align: center;
+        /* Seção Metodologia e Clientes preenchida pela imagem */
+        .full-image-section {
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
         }
 
-        .methodology-section img,
-        .clients-section img {
-            max-width: 100%;
-            height: auto;
+        .methodology-section {
+            background-image: url('https://fluowen.github.io/jcr-ambiental/images/04_Metodologia.png');
+        }
+
+        .clients-section {
+            background-image: url('https://fluowen.github.io/jcr-ambiental/images/05_Clientes.png');
         }
     </style>
 </head>
@@ -180,18 +183,10 @@
     </section>
 
     <!-- Seção Metodologia -->
-    <section class="methodology-section">
-        <div class="container">
-            <img src="https://fluowen.github.io/jcr-ambiental/images/04_Metodologia.png" alt="Metodologia">
-        </div>
-    </section>
+    <section class="methodology-section full-image-section"></section>
 
     <!-- Seção Clientes -->
-    <section class="clients-section">
-        <div class="container">
-            <img src="https://fluowen.github.io/jcr-ambiental/images/05_Clientes.png" alt="Clientes">
-        </div>
-    </section>
+    <section class="clients-section full-image-section"></section>
 
     <!-- Script do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

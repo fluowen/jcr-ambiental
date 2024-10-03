@@ -12,6 +12,49 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
     <!-- Link para o arquivo de estilos customizados -->
     <link rel="stylesheet" href="css/styles.css">
+    <style>
+        /* Customização para o carrossel ocupar 80% da altura da tela */
+        #carousel-section {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .carousel-inner img {
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Estilos para a seção de cards */
+        #services-section {
+            background-color: #848484;
+        }
+
+        .card {
+            border: 2px solid #92E016;
+            border-radius: 10px;
+            height: 100%;
+        }
+
+        .card-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-align: left;
+        }
+
+        .card-body ul {
+            text-align: left;
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .card i {
+            font-size: 2rem;
+            color: #92E016;
+            margin-right: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -25,13 +68,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="https://fluowen.github.io/jcr-ambiental/01_Missao.png" class="d-block w-100" alt="Image 1">
+                    <img src="img/image1.jpg" class="d-block w-100" alt="Image 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://fluowen.github.io/jcr-ambiental/02_Visao.png" class="d-block w-100" alt="Image 2">
+                    <img src="img/image2.jpg" class="d-block w-100" alt="Image 2">
                 </div>
                 <div class="carousel-item">
-                    <img src="https://fluowen.github.io/jcr-ambiental/03_Valores.png" class="d-block w-100" alt="Image 3">
+                    <img src="img/image3.jpg" class="d-block w-100" alt="Image 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -50,13 +93,13 @@
         <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
             <!-- Primeiro Card -->
             <div class="col">
-                <div class="card h-100 text-center">
+                <div class="card h-100">
                     <div class="card-header">
                         <i class="bi bi-shield"></i>
-                        <h4 class="my-0 fw-normal">Gestão de HSE</h4>
+                        Gestão de HSE
                     </div>
                     <div class="card-body">
-                        <ul class="list-unstyled mt-3 mb-4">
+                        <ul>
                             <li>Mão de obra especializada</li>
                             <li>Gestão de Segurança, Saúde e Meio Ambiente (HSE)</li>
                             <li>Gestão de Riscos Operacionais</li>
@@ -69,13 +112,13 @@
             </div>
             <!-- Segundo Card -->
             <div class="col">
-                <div class="card h-100 text-center">
+                <div class="card h-100">
                     <div class="card-header">
                         <i class="bi bi-clipboard-check"></i>
-                        <h4 class="my-0 fw-normal">Consultoria e Auditoria</h4>
+                        Consultoria e Auditoria
                     </div>
                     <div class="card-body">
-                        <ul class="list-unstyled mt-3 mb-4">
+                        <ul>
                             <li>Consultorias para diagnósticos e implementação de soluções e EHS</li>
                             <li>Assistência técnica e judicial</li>
                             <li>Diagnóstico de Riscos Operacionais</li>
@@ -88,13 +131,13 @@
             </div>
             <!-- Terceiro Card -->
             <div class="col">
-                <div class="card h-100 text-center">
+                <div class="card h-100">
                     <div class="card-header">
                         <i class="bi bi-file-earmark-text"></i>
-                        <h4 class="my-0 fw-normal">Laudos e Avaliações Técnicas</h4>
+                        Laudos e Avaliações Técnicas
                     </div>
                     <div class="card-body">
-                        <ul class="list-unstyled mt-3 mb-4">
+                        <ul>
                             <li>Requisitos Legais</li>
                             <li>Identificação e avaliação dos agentes de risco</li>
                             <li>Elaboração do Laudo Técnico das Condições da Atividade do Trabalho (LTCAT)</li>
@@ -106,13 +149,13 @@
             </div>
             <!-- Quarto Card -->
             <div class="col">
-                <div class="card h-100 text-center">
+                <div class="card h-100">
                     <div class="card-header">
                         <i class="bi bi-recycle"></i>
-                        <h4 class="my-0 fw-normal">EGS e Gestão Ambiental</h4>
+                        EGS e Gestão Ambiental
                     </div>
                     <div class="card-body">
-                        <ul class="list-unstyled mt-3 mb-4">
+                        <ul>
                             <li>Documento para Gestão Segura de Resíduos</li>
                             <li>Mapa de restrição de uso de águas subterrâneas</li>
                             <li>Programa de Observação em Segurança Ambiental (POA)</li>

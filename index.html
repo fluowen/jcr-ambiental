@@ -39,9 +39,12 @@
 
         .card {
             background-color: transparent;
-            border: none;
+            border: 2px solid #92E016;
             color: white;
             height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .card-header {
@@ -80,12 +83,22 @@
             border-radius: 5px;
             text-transform: uppercase;
             display: block;
-            margin-top: 20px;
+            margin-top: auto;
+            text-align: center;
         }
 
         .btn-saiba-mais:hover {
             background-color: #4a9717;
             color: white;
+        }
+
+        .card-footer {
+            text-align: center;
+        }
+
+        /* Garantir que os botões e cabeçalhos sejam do mesmo tamanho */
+        .card-header, .btn-saiba-mais {
+            width: 100%;
         }
 
         /* Estilos para as seções Metodologia e Clientes para ocupar a tela inteira */
@@ -157,7 +170,9 @@
                                 <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Segurança em Distribuição</li>
                                 <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Segurança de Processos</li>
                             </ul>
-                            <button class="btn-saiba-mais">Saiba mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-saiba-mais">Entre em contato</button>
                         </div>
                     </div>
                 </div>
@@ -177,7 +192,9 @@
                                 <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Desenvolvimento de Políticas</li>
                                 <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Treinamento e Desenvolvimento</li>
                             </ul>
-                            <button class="btn-saiba-mais">Saiba mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-saiba-mais">Entre em contato</button>
                         </div>
                     </div>
                 </div>
@@ -196,7 +213,9 @@
                                 <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Análise Ergonômica</li>
                                 <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">LTIP – Laudo Técnico de Insalubridade (NR 15) e Periculosidade (NR 16)</li>
                             </ul>
-                            <button class="btn-saiba-mais">Saiba mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-saiba-mais">Entre em contato</button>
                         </div>
                     </div>
                 </div>
@@ -213,7 +232,9 @@
                                 <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Mapa de restrição de uso de águas subterrâneas</li>
                                 <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Programa de Observação em Segurança Ambiental (POA)</li>
                             </ul>
-                            <button class="btn-saiba-mais">Saiba mais</button>
+                        </div>
+                        <div class="card-footer">
+                            <button class="btn-saiba-mais">Entre em contato</button>
                         </div>
                     </div>
                 </div>

@@ -1,122 +1,14 @@
-/* Fonte padrão Montserrat */
+/* Custom styles for the landing page */
 body {
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #fff;
-    color: #fff;
-    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
 }
 
-/* Configurações gerais para seções com efeito parallax */
-.parallax {
-    position: relative;
-    height: 100vh; /* Ocupa a tela toda */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed; /* Efeito parallax */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    overflow: hidden;
+#carousel-section {
+    margin-top: 50px;
 }
 
-/* Estilos para o conteúdo */
-.content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-}
-
-h1 {
-    font-size: 6vw; /* Tamanho de fonte responsivo com base na largura da tela */
-    color: #fff;
-    margin: 0;
-    padding: 0;
-}
-
-/* Camada escura opaca sobre a imagem de fundo para melhorar a legibilidade */
-.parallax::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4); /* Camada opaca */
-    z-index: 1;
-}
-
-/* Imagens de fundo de cada seção */
-#secao1 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page0.png'); /* Substitua pelo URL da imagem */
-}
-
-#secao2 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page1.png');
-}
-
-#secao3 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page2.png');
-}
-
-#secao4 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page3.png');
-}
-
-#secao5 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page4.png');
-}
-
-#secao6 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page5.png');
-}
-
-#secao7 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page6.png');
-}
-
-#secao8 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page7.png');
-}
-
-#secao9 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page8.png');
-}
-
-#secao10 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page9.png');
-}
-
-#secao11 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page10.png');
-}
-
-#secao12 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page11.png');
-}
-
-#secao13 {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/page12.png');
-}
-
-/* Responsividade para telas menores */
-@media (max-width: 768px) {
-
-    h1 {
-        font-size: 8vw; /* Diminui o tamanho da fonte em dispositivos móveis */
-    }
-
-    .parallax {
-        background-attachment: scroll; /* Remove o efeito parallax em dispositivos móveis para melhorar o desempenho */
-    }
-}
-
-/* Para televisores e telas muito grandes */
-@media (min-width: 1600px) {
-    h1 {
-        font-size: 4vw; /* Ajuste de fonte para telas muito grandes */
-    }
+.carousel-inner img {
+    height: 500px;
+    object-fit: cover;
 }

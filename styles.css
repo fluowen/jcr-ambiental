@@ -22,11 +22,15 @@ body {
 /* Ajustar o carrossel para ocupar 80% da página */
 #carousel-section {
     margin: 5% 10%;
-    height: 80vh; /* Ocupa 80% da altura da página */
+    height: 80vh; /* Ajuste para ocupar 80% da altura da página */
+}
+
+.carousel-inner {
+    height: 100%; /* Certificar que o carrossel ocupe a altura do container */
 }
 
 .carousel-inner img {
-    height: 100%;
+    height: 100%; /* Mantém as imagens com o tamanho correto */
     object-fit: cover;
 }
 

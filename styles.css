@@ -2,12 +2,27 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Ajustar altura do carrossel para 80% da página */
-#carousel-section {
-    height: 80vh;
+/* Estilo do Menu de Navegação */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar-nav {
     display: flex;
     justify-content: center;
-    align-items: center;
+}
+
+.nav-item .nav-link {
+    padding: 0 15px;
+}
+
+/* Ajustar margens do carrossel */
+#carousel-section {
+    margin: 5% 10%;
+    height: 80vh;
 }
 
 .carousel-inner img {
@@ -83,22 +98,9 @@ body {
     text-align: center;
 }
 
-/* Força as caixas a ocupar 80% da tela */
-.card {
-    min-height: 80vh;
-}
-
 /* Estilos para imagens de fundo (Metodologia e Clientes) */
 .full-image-section {
     height: 100vh;
     background-size: cover;
     background-position: center;
-}
-
-.methodology-section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/images/04_Metodologia.png');
-}
-
-.clients-section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/images/05_Clientes.png');
 }

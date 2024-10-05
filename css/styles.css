@@ -8,6 +8,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
+    background-color: #343a40; /* Definindo a cor de fundo para a barra de navegação */
 }
 
 .navbar-nav {
@@ -17,23 +18,28 @@ body {
 
 .nav-item .nav-link {
     padding: 0 15px;
+    color: white;
+}
+
+.nav-item .nav-link:hover {
+    color: #92E016;
 }
 
 /* Ajustar o carrossel para ocupar 80% da altura da página com margens */
 #carousel-section {
-    margin-left: 10%; /* Margem esquerda de 10% */
-    margin-right: 10%; /* Margem direita de 10% */
-    margin-top: 5%; /* Margem superior de 5% */
-    margin-bottom: 5%; /* Margem inferior de 5% */
-    height: 80vh; /* Ajuste para ocupar 80% da altura da página */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 80vh;
 }
 
 .carousel-inner {
-    height: 100%; /* Certificar que o carrossel ocupe a altura do container */
+    height: 100%;
 }
 
 .carousel-inner img {
-    height: 100%; /* Mantém as imagens com o tamanho correto */
+    height: 100%;
     object-fit: cover;
 }
 
@@ -42,8 +48,6 @@ body {
     background-color: #A2A2A2;
     padding: 50px 0;
     min-height: 80vh;
-    display: flex;
-    align-items: center;
 }
 
 .card {
@@ -63,9 +67,6 @@ body {
     text-align: left;
     padding: 10px;
     border-radius: 10px 10px 0 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
 }
 
 .card-body ul {
@@ -84,25 +85,6 @@ body {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-}
-
-.btn-saiba-mais {
-    background-color: #5EB71B;
-    color: white;
-    font-weight: bold;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-align: center;
-}
-
-.btn-saiba-mais:hover {
-    background-color: #4a9717;
-}
-
-.card-footer {
-    text-align: center;
 }
 
 /* Estilos para imagens de fundo (Metodologia e Clientes) */

@@ -4,7 +4,7 @@ body, html {
     height: 100%;
     width: 100%;
     overflow-x: hidden;
-    font-family: 'Montserrat', sans-serif; /* Define Montserrat como a fonte principal */
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* Estilo do Menu de Navegação */
@@ -39,13 +39,13 @@ body, html {
     justify-content: center;
     align-items: center;
     position: relative;
+    background-color: #f0f0f0; /* Fundo sólido */
 }
 
 /* Conteúdos dentro das seções ocupam 98% da seção */
 .section-content {
     width: 98%;
     height: 98%;
-    background-color: rgba(255, 255, 255, 0.8); /* Ajuste opcional para fundo branco sem ocupar 100% */
 }
 
 /* Ajustar o carrossel para ocupar 98% da seção */
@@ -58,6 +58,32 @@ body, html {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+/* Seção de Metodologia e Clientes com imagem contida na seção, posicionada acima */
+.full-image-section {
+    background-color: #ffffff; /* Fundo sólido para as seções */
+    position: relative;
+}
+
+.full-image-section .section-content {
+    position: relative;
+}
+
+.full-image-section img {
+    position: absolute;
+    top: -30px; /* Ajuste para colocar a imagem acima do conteúdo da seção */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 98%;
+    max-height: 200px; /* Limita a altura da imagem */
+    object-fit: cover;
+    z-index: 1;
+}
+
+.full-image-section .text-content {
+    z-index: 2;
+    padding-top: 220px; /* Espaço suficiente para que o texto não sobreponha a imagem */
 }
 
 /* Estilos para a seção de serviços */
@@ -102,19 +128,4 @@ body, html {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-}
-
-/* Estilos para as seções de Metodologia e Clientes */
-.full-image-section {
-    height: 100vh;
-    background-size: cover;
-    background-position: center;
-}
-
-.methodology-section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/images/04_Metodologia.png');
-}
-
-.clients-section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/images/05_Clientes.png');
 }

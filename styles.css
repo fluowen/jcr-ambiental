@@ -19,10 +19,10 @@ body {
     padding: 0 15px;
 }
 
-/* Ajustar margens do carrossel */
+/* Ajustar o carrossel para ocupar 80% da página */
 #carousel-section {
     margin: 5% 10%;
-    height: 80vh;
+    height: 80vh; /* Ocupa 80% da altura da página */
 }
 
 .carousel-inner img {

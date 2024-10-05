@@ -1,5 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    overflow-x: hidden; /* Evita a rolagem horizontal causada por margens extras */
 }
 
 /* Estilo do Menu de Navegação */
@@ -8,7 +11,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #343a40; /* Definindo a cor de fundo para a barra de navegação */
+    background-color: #343a40; /* Cor de fundo para a barra de navegação */
 }
 
 .navbar-nav {
@@ -25,11 +28,10 @@ body {
     color: #92E016;
 }
 
-/* Ajustar o carrossel para ocupar 80% da altura da página com margens */
+/* Ajustar o carrossel para ter 2% de margem em todos os lados */
 #carousel-section {
-    margin-left: 2%;
-    margin-right: 2%;
-    height: 95vh;
+    margin: 2%;
+    height: 96vh; /* Ajuste da altura do carrossel para ocupar 96% da página, menos as margens */
 }
 
 .carousel-inner {
@@ -45,7 +47,9 @@ body {
 #services-section {
     background-color: #A2A2A2;
     padding: 50px 0;
-    min-height: 80vh;
+    height: 100vh; /* Ajuste para que a seção ocupe toda a altura da página */
+    margin-top: 1%; /* Margem superior de 1% */
+    margin-bottom: 1%; /* Margem inferior de 1% */
 }
 
 .card {
@@ -55,7 +59,6 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 80vh;
 }
 
 .card-header {

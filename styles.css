@@ -111,3 +111,11 @@ body {
     background-size: cover;
     background-position: center;
 }
+
+.methodology-section {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/images/04_Metodologia.png');
+}
+
+.clients-section {
+    background-image: url('https://fluowen.github.io/jcr-ambiental/images/05_Clientes.png');
+}

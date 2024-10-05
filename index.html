@@ -10,119 +10,40 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <!-- Fonte Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        /* Seção 1 deve ocupar 100% da altura da página */
-        #carousel-section {
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .carousel-inner img {
-            height: 100%;
-            object-fit: cover;
-        }
-
-        /* Estilos para a seção de cards */
-        #services-section {
-            background-color: #757070ff;
-            padding: 100px 0;
-            height: 100vh;
-            display: flex;
-            align-items: center;
-        }
-
-        .card {
-            background-color: transparent;
-            border: 1px solid #92E016;
-            color: white;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-        }
-
-        .card-header {
-            background-color: #5EB71B;
-            color: white;
-            font-weight: bold;
-            text-align: left;
-            padding: 10px;
-            border-radius: 10px 10px 0 0;
-        }
-
-        .card-body ul {
-            text-align: left;
-            list-style-type: none;
-            padding-left: 0;
-        }
-
-        .card-body li {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-        }
-
-        .card-body img {
-            width: 20px;
-            height: 20px;
-            margin-right: 10px;
-        }
-
-        .btn-saiba-mais {
-            background-color: #5EB71B;
-            color: white;
-            font-weight: bold;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-transform: uppercase;
-            display: block;
-            margin-top: auto;
-            text-align: center;
-        }
-
-        .btn-saiba-mais:hover {
-            background-color: #4a9717;
-            color: white;
-        }
-
-        .card-footer {
-            text-align: center;
-        }
-
-        /* Garantir que os botões e cabeçalhos sejam do mesmo tamanho */
-        .card-header, .btn-saiba-mais {
-            width: 100%;
-        }
-
-        /* Estilos para as seções Metodologia e Clientes para ocupar a tela inteira */
-        .full-image-section {
-            height: 100vh;
-            background-size: cover;
-            background-position: center;
-        }
-
-        /* Estilos para imagens */
-        .methodology-section {
-            background-image: url('https://fluowen.github.io/jcr-ambiental/images/04_Metodologia_B.png');
-        }
-
-        .clients-section {
-            background-image: url('https://fluowen.github.io/jcr-ambiental/images/05_Customers.png');
-        }
-    </style>
+    <!-- Link para o arquivo CSS externo -->
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
+    <!-- Barra de Navegação -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">JCR Ambiental</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carousel-section">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services-section">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#methodology-section">Metodologia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#clients-section">Clientes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <!-- Carrossel -->
     <section id="carousel-section">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -150,7 +71,7 @@
         </div>
     </section>
 
-    <!-- Seção de Cards -->
+    <!-- Seção de Serviços (Cards) -->
     <section id="services-section" class="container-fluid">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
@@ -176,77 +97,16 @@
                         </div>
                     </div>
                 </div>
-                <!-- Segundo Card -->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <img src="https://fluowen.github.io/jcr-ambiental/images/IC_Consultoria_Auditoria.png" alt="Ícone Consultoria e Auditoria" style="width: 40px; margin-right: 10px;">
-                            Consultoria e Auditoria
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Consultorias para diagnósticos e implementação de soluções e EHS</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Assistência técnica e judicial</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Diagnóstico de Riscos Operacionais</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Auditorias sociais e regulatórias</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Desenvolvimento de Políticas</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Treinamento e Desenvolvimento</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn-saiba-mais">Entre em contato</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Terceiro Card -->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <img src="https://fluowen.github.io/jcr-ambiental/images/IC_Laudos_Avaliacoes.png" alt="Ícone Laudos e Avaliações Técnicas" style="width: 40px; margin-right: 10px;">
-                            Laudos e Avaliações Técnicas
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Requisitos Legais</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Identificação e avaliação dos agentes de risco</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Elaboração do Laudo Técnico das Condições da Atividade do Trabalho (LTCAT)</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Análise Ergonômica</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">LTIP – Laudo Técnico de Insalubridade (NR 15) e Periculosidade (NR 16)</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn-saiba-mais">Entre em contato</button>
-                        </div>
-                    </div>
-                </div>
-                <!-- Quarto Card -->
-                <div class="col">
-                    <div class="card h-100">
-                        <div class="card-header">
-                            <img src="https://fluowen.github.io/jcr-ambiental/images/IC_EGS_Gestao_Ambiental.png" alt="Ícone EGS e Gestão Ambiental" style="width: 40px; margin-right: 10px;">
-                            EGS e Gestão Ambiental
-                        </div>
-                        <div class="card-body">
-                            <ul>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Documento para Gestão Segura de Resíduos</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Mapa de restrição de uso de águas subterrâneas</li>
-                                <li><img src="https://fluowen.github.io/jcr-ambiental/images/IC_Bullet_Point.png" alt="Bullet">Programa de Observação em Segurança Ambiental (POA)</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer">
-                            <button class="btn-saiba-mais">Entre em contato</button>
-                        </div>
-                    </div>
-                </div>
+                <!-- Outros Cards Aqui -->
             </div>
         </div>
     </section>
 
-    <!-- Seção Metodologia (Imagem preenche a tela) -->
-    <section class="methodology-section full-image-section"></section>
+    <!-- Seção Metodologia -->
+    <section id="methodology-section" class="full-image-section"></section>
 
-    <!-- Seção Clientes (Imagem preenche a tela) -->
-    <section class="clients-section full-image-section"></section>
+    <!-- Seção Clientes -->
+    <section id="clients-section" class="full-image-section"></section>
 
     <!-- Script do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>

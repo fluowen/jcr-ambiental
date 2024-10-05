@@ -1,8 +1,8 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0; /* Remove a margem padrão */
-    padding: 0; /* Remove o padding padrão */
-    overflow-x: hidden; /* Evita a rolagem horizontal causada por margens extras */
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
 }
 
 /* Estilo do Menu de Navegação */
@@ -11,7 +11,7 @@ body {
     top: 0;
     width: 100%;
     z-index: 1000;
-    background-color: #343a40; /* Cor de fundo para a barra de navegação */
+    background-color: #343a40;
 }
 
 .navbar-nav {
@@ -28,10 +28,18 @@ body {
     color: #92E016;
 }
 
-/* Ajustar o carrossel para ter 2% de margem em todos os lados */
+/* Estilos Gerais para as Seções */
+section {
+    margin: 2% auto;  /* Margem de 2% em todos os lados */
+    width: 96%;       /* Largura de 96% para acompanhar as margens */
+    height: 96vh;     /* Cada seção ocupa 96% da altura da viewport */
+}
+
+/* Ajustes Específicos para o Carrossel */
 #carousel-section {
-    margin: 2%;
-    height: 96vh; /* Ajuste da altura do carrossel para ocupar 96% da página, menos as margens */
+    margin: 2% auto;
+    width: 96%;
+    height: 96vh;
 }
 
 .carousel-inner {
@@ -46,10 +54,6 @@ body {
 /* Estilos para a seção de serviços (cards) */
 #services-section {
     background-color: #A2A2A2;
-    padding: 50px 0;
-    height: 100vh; /* Ajuste para que a seção ocupe toda a altura da página */
-    margin-top: 1%; /* Margem superior de 1% */
-    margin-bottom: 1%; /* Margem inferior de 1% */
 }
 
 .card {
@@ -58,7 +62,7 @@ body {
     color: white;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .card-header {
@@ -74,31 +78,15 @@ body {
     text-align: left;
     list-style-type: none;
     padding-left: 0;
+    margin-bottom: 0;
 }
 
 .card-body li {
-    display: flex;
-    align-items: center;
     margin-bottom: 10px;
-}
-
-.card-body img {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
 }
 
 /* Estilos para imagens de fundo (Metodologia e Clientes) */
 .full-image-section {
-    height: 100vh;
     background-size: cover;
     background-position: center;
-}
-
-.methodology-section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/images/04_Metodologia.png');
-}
-
-.clients-section {
-    background-image: url('https://fluowen.github.io/jcr-ambiental/images/05_Clientes.png');
 }

@@ -55,6 +55,7 @@
 }
 
 /* Seção Clientes */
+/* Seção Clientes */
 #clients {
     background-color: #f4f4f4;
 }
@@ -65,14 +66,22 @@
     color: #2a5934;
 }
 
-#clients img {
-    max-width: 80%;
+.logo-client {
+    width: 120px; /* Tamanho uniforme para todos os logos */
     height: auto;
+    object-fit: contain; /* Garante que os logos se ajustem sem distorcer */
+    padding: 10px;
     transition: transform 0.3s ease;
 }
 
-#clients img:hover {
+.logo-client:hover {
     transform: scale(1.1); /* Efeito de hover para aumentar o logo */
+}
+
+/* Controles do Carrossel */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
 }
 
 @media (max-width: 768px) {

@@ -53,3 +53,30 @@
 #about-us img {
     border-radius: 8px;
 }
+
+/* Seção Clientes */
+#clients {
+    background-color: #f4f4f4;
+}
+
+#clients h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2a5934;
+}
+
+#clients img {
+    max-width: 80%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#clients img:hover {
+    transform: scale(1.1); /* Efeito de hover para aumentar o logo */
+}
+
+@media (max-width: 768px) {
+    #clients img {
+        max-width: 100%;
+    }
+}

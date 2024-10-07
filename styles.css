@@ -112,3 +112,42 @@ h2 {
     font-size: 16px;
     color: #666;
 }
+
+.about-us {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+}
+
+.about-content img {
+    width: 200px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.about-content div {
+    max-width: 700px;
+}
+
+.about-content h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #2a5934;
+}
+
+.about-content p {
+    font-size: 16px;
+    color: #666;
+}

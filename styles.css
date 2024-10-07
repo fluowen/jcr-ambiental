@@ -6,20 +6,20 @@
     color: #ffffff;
     padding: 5rem 0;
     position: relative;
-    min-height: 100vh; /* Ensure banner is at least 100% of the viewport height */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden; /* Ensure no overlap or excess content spills */
 }
 
 /* Carousel-Banner */
 #carousel-banner {
-    max-height: 65vh; /* Limit carousel height to 65% of the section */
+    width: 100%;
 }
 
 #carousel-banner img {
-    max-height: 100%;
-    object-fit: cover; /* Ensure images cover the container without overflowing */
+    width: 100%; /* Full width carousel images */
+    object-fit: cover; /* Ensure images fit within container without distortion */
 }
 
 /* Floating Button */
@@ -46,48 +46,38 @@
 
 /* Text Content Area */
 .banner-text {
-    height: 35vh; /* Text area now takes up 35% of the section */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 15px;
+    padding: 20px 0; /* Adds some padding between the carousel and the text */
 }
 
 .banner-text h1 {
-    font-size: 36px; /* H1 takes up 36% of text area */
+    font-size: 36px;
     margin-right: 20px;
 }
 
 .banner-text p {
-    font-size: 18px; /* P takes up 64% of text area */
-    max-width: 64%;
+    font-size: 18px;
+    max-width: 100%;
 }
 
-/* Responsive adjustments using media queries */
+/* Responsive adjustments */
 @media (max-width: 1200px) {
-    #carousel-banner {
-        max-height: 60vh; /* Carousel height decreases on smaller screens */
-    }
-
-    .banner-text {
-        height: 30vh; /* Text area increases on smaller screens */
-    }
-}
-
-@media (max-width: 768px) {
-    #carousel-banner {
-        max-height: 50vh; /* Reduce the carousel height on smaller screens */
-    }
-
     .banner-text h1 {
-        font-size: 28px; /* Adjust H1 size on smaller screens */
+        font-size: 32px;
     }
 
     .banner-text p {
         font-size: 16px;
-        max-width: 100%; /* Text area expands fully */
     }
 }
+
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 28px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
 
 /* Seção Clientes */
 #clients {

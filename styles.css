@@ -8,13 +8,13 @@
     position: relative;
 }
 
-.banner .container {
-    position: relative;
+/* Carousel-Banner at the top and 80% height */
+#carousel-banner {
+    height: 80vh; /* 80% of the viewport height */
 }
 
-/* Carousel-Banner */
 #carousel-banner img {
-    height: 400px; /* Adjust height as needed */
+    height: 100%;
     object-fit: cover;
 }
 
@@ -28,7 +28,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: rgba(255, 255, 255, 0.5); /* 50% transparency */
+    background-color: rgba(255, 255, 255, 0.1); /* White with 10% transparency */
     color: #000;
     padding: 10px 20px;
     border-radius: 50px;
@@ -37,7 +37,7 @@
 }
 
 .btn-floating:hover {
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.2); /* Slightly more visible on hover */
     color: #000;
 }
 

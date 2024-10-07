@@ -6,11 +6,12 @@
     color: #ffffff;
     padding: 5rem 0;
     position: relative;
+    height: 100vh; /* Full viewport height */
 }
 
-/* Carousel-Banner at the top and 80% height */
+/* Carousel-Banner with Bootstrap controls */
 #carousel-banner {
-    height: 80vh; /* 80% of the viewport height */
+    height: 76%; /* Carousel takes up 76% of the section */
 }
 
 #carousel-banner img {
@@ -18,9 +19,9 @@
     object-fit: cover;
 }
 
-.carousel-item img {
-    width: 100%;
-    object-fit: cover;
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent control buttons */
 }
 
 /* Floating Button */
@@ -41,15 +42,23 @@
     color: #000;
 }
 
-/* Text Content */
-.banner h1 {
-    font-size: 48px;
-    margin-right: 30px;
+/* Text Content Area */
+.banner-text {
+    height: 24%; /* Text area takes up 24% of the section */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
 }
 
-.banner p {
-    max-width: 50%;
-    font-size: 18px;
+.banner-text h1 {
+    font-size: 36px; /* H1 takes up 36% of text area */
+    margin-right: 20px;
+}
+
+.banner-text p {
+    font-size: 18px; /* P takes up 64% of text area */
+    max-width: 64%;
 }
 
 /* Seção Clientes */

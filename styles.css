@@ -115,7 +115,7 @@ h2 {
 
 .about-us {
     background-color: #fff;
-    padding: 50px 0;
+    padding: 60px 0;
 }
 
 .container {
@@ -126,28 +126,35 @@ h2 {
 
 .about-content {
     display: flex;
+    flex-wrap: wrap; /* Permite responsividade */
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     text-align: left;
 }
 
-.about-content img {
-    width: 200px;
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%; /* Responsivo, ocupa toda a largura disponível */
     height: auto;
     border-radius: 8px;
 }
 
-.about-content div {
-    max-width: 700px;
+.about-text {
+    flex: 2;
 }
 
-.about-content h2 {
-    font-size: 32px;
+.about-text h2 {
+    font-size: 36px;
     margin-bottom: 20px;
-    color: #2a5934;
+    color: #2a5934; /* Cor da identidade visual */
 }
 
-.about-content p {
-    font-size: 16px;
-    color: #666;
+.about-text p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.6;
 }

@@ -1,5 +1,76 @@
 /* Estilo Customizado */
 
+/* Header */
+header {
+    background-color: #363636ff; /* Set header background to dark gray */
+    padding: 15px 0;
+    position: relative;
+    z-index: 10; /* Ensure header is above other content */
+}
+
+header a {
+    text-decoration: none;
+}
+
+header img {
+    width: 150px; /* Resize logo */
+    background-color: #363636ff; /* Logo background */
+}
+
+header .nav-link {
+    font-size: 18px; /* Increase font size */
+    color: #ffffff; /* White text */
+    font-weight: bold; /* Bold text */
+    margin-right: 20px;
+    transition: color 0.3s ease; /* Add smooth transition */
+}
+
+header .nav-link:hover {
+    color: #92E016; /* Secondary green on hover */
+}
+
+/* WhatsApp Button */
+.btn {
+    background-color: #ffffff; /* Solid white */
+    color: #000;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+}
+
+.btn:hover {
+    background-color: #f0f0f0; /* Slightly darker white on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    header {
+        padding: 10px;
+    }
+
+    header .nav-link {
+        font-size: 16px;
+        margin-right: 15px;
+    }
+
+    .btn {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    header .nav-link {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .btn {
+        font-size: 12px;
+    }
+}
+
 /* Banner */
 .banner {
     background: linear-gradient(90deg, #5EB71B 0%, #92E016 100%);

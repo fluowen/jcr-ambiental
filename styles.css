@@ -7,11 +7,14 @@
     padding: 5rem 0;
     position: relative;
     height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ensures text and carousel have separate space */
 }
 
-/* Carousel-Banner with Bootstrap controls */
+/* Carousel-Banner */
 #carousel-banner {
-    height: 76%; /* Carousel takes up 76% of the section */
+    height: 65vh; /* Carousel now occupies 65% of the section */
 }
 
 #carousel-banner img {
@@ -29,7 +32,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* White with 10% transparency */
+    background-color: rgb(255, 255, 255);
     color: #000;
     padding: 10px 20px;
     border-radius: 50px;
@@ -44,7 +47,7 @@
 
 /* Text Content Area */
 .banner-text {
-    height: 24%; /* Text area takes up 24% of the section */
+    height: 25vh; /* Text area now takes up 25% of the section */
     display: flex;
     align-items: center;
     justify-content: space-between;

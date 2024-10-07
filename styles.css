@@ -134,3 +134,37 @@
     font-size: 16px;
     color: #666;
 }
+
+/* Contact Section */
+#contact {
+    background-color: #f4f4f4;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2a5934;
+}
+
+#contact p, label {
+    font-size: 16px;
+    color: #333;
+}
+
+#contact .form-control {
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: #2a5934;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #1e4227;
+}

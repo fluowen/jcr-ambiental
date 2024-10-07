@@ -168,3 +168,38 @@
 #contact button:hover {
     background-color: #1e4227;
 }
+
+/* Footer Styles */
+footer {
+    background-color: #2a5934;
+    color: white;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer p, footer a {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer .fab {
+    margin-right: 10px;
+}
+
+footer .text-center {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}

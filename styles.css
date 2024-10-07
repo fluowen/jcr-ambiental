@@ -2,41 +2,25 @@
 
 /* Banner */
 .banner {
-    background-color: #2a5934;
+    background: linear-gradient(90deg, #5EB71B 0%, #92E016 100%); /* Linear background */
     color: #ffffff;
+    padding: 5rem 0;
 }
 
-/* Estilos para a Seção de Serviços */
-#services {
-    background-color: #f4f4f4;
+.banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-#services h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #2a5934;
+.banner h1 {
+    font-size: 48px;
+    margin-right: 30px;
 }
 
-#services h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-#services p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
-}
-
-#services img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.row {
-    margin-bottom: 20px; /* Espaçamento entre os serviços */
+.banner p {
+    max-width: 50%;
+    font-size: 18px;
 }
 
 /* Seção Quem Somos */

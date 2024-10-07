@@ -1,0 +1,205 @@
+/* Estilo Customizado */
+
+/* Banner */
+.banner {
+    background-color: #2a5934;
+    color: #ffffff;
+}
+
+/* Estilos para a Seção de Serviços */
+#services {
+    background-color: #f4f4f4;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2a5934;
+}
+
+#services h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+#services p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+}
+
+#services img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.row {
+    margin-bottom: 20px; /* Espaçamento entre os serviços */
+}
+
+/* Seção Quem Somos */
+#about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#about-us p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+#about-us img {
+    border-radius: 8px;
+}
+
+/* Seção Clientes */
+#clients {
+    background-color: #f4f4f4;
+}
+
+#clients h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2a5934;
+}
+
+.logo-client {
+    width: 100px; /* Tamanho ajustado para que 5 logos caibam confortavelmente */
+    height: 100px; /* Mantém as proporções com altura e largura definidas */
+    object-fit: contain; /* Garante que os logos não fiquem distorcidos */
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-client:hover {
+    transform: scale(1.05); /* Reduz o zoom para um efeito mais sutil */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Controla o tamanho das setas de navegação */
+}
+
+.d-flex.justify-content-around {
+    gap: 20px; /* Espaçamento entre os logos */
+}
+
+@media (max-width: 768px) {
+    #clients img {
+        max-width: 100%;
+    }
+}
+
+/* Seção de Projetos */
+#projects {
+    background-color: #f4f4f4;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2a5934;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #f4f4f4;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2a5934;
+}
+
+#contact p, label {
+    font-size: 16px;
+    color: #333;
+}
+
+#contact .form-control {
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: #2a5934;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #1e4227;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #2a5934;
+    color: white;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer p, footer a {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer .fab {
+    margin-right: 10px;
+}
+
+footer .text-center {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}

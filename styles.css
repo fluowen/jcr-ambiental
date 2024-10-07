@@ -1,162 +1,192 @@
-/* Estilo Customizado */
+/* Global styles */
+body, html {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Header */
+header {
+    background-color: #5EB71B; /* Primary Green */
+    padding: 15px 0;
+}
+
+header .nav-link {
+    color: #fff;
+    font-size: 16px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+header .nav-link:hover {
+    color: #A2A2A2; /* Light Gray */
+}
+
+header img {
+    width: 150px;
+}
 
 /* Banner */
 .banner {
-    background-color: #2a5934;
+    background-color: #92E016; /* Secondary Green */
     color: #ffffff;
+    padding: 5rem 0;
+    text-align: center;
 }
 
-/* Estilos para a Seção de Serviços */
+.banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.banner p {
+    font-size: 20px;
+}
+
+/* Services Section */
 #services {
     background-color: #f4f4f4;
+    padding: 60px 0;
 }
 
 #services h2 {
     font-size: 36px;
+    color: #5EB71B; /* Primary Green */
     margin-bottom: 30px;
-    color: #2a5934;
 }
 
-#services h3 {
-    font-size: 24px;
-    color: #333;
-    margin-bottom: 10px;
+#services .row {
+    display: flex;
+    flex-wrap: wrap;
 }
 
-#services p {
-    font-size: 16px;
-    line-height: 1.6;
-    color: #666;
+#services .col-md-6 {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
 #services img {
-    width: 100%;
-    height: auto;
     border-radius: 8px;
+    width: 150px;
+    margin-right: 20px;
 }
 
-.row {
-    margin-bottom: 20px; /* Espaçamento entre os serviços */
+#services h3 {
+    color: #848484; /* Dark Gray */
+    font-size: 24px;
 }
 
-/* Seção Quem Somos */
-#about-us h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
+#services p {
+    color: #A2A2A2; /* Light Gray */
+    font-size: 16px;
 }
 
-#about-us p {
-    font-size: 18px;
-    line-height: 1.8;
-}
-
-#about-us img {
-    border-radius: 8px;
-}
-
-/* Seção Clientes */
-#clients {
-    background-color: #f4f4f4;
-}
-
-#clients h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #2a5934;
-}
-
-.logo-client {
-    width: 100px; /* Tamanho ajustado para que 5 logos caibam confortavelmente */
-    height: 100px; /* Mantém as proporções com altura e largura definidas */
-    object-fit: contain; /* Garante que os logos não fiquem distorcidos */
-    padding: 10px;
-    transition: transform 0.3s ease;
-}
-
-.logo-client:hover {
-    transform: scale(1.05); /* Reduz o zoom para um efeito mais sutil */
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%; /* Controla o tamanho das setas de navegação */
-}
-
-.d-flex.justify-content-around {
-    gap: 20px; /* Espaçamento entre os logos */
-}
-
-@media (max-width: 768px) {
-    #clients img {
-        max-width: 100%;
-    }
-}
-
-/* Seção de Projetos */
+/* Projects Section */
 #projects {
-    background-color: #f4f4f4;
+    background-color: #ffffff;
+    padding: 60px 0;
 }
 
 #projects h2 {
     font-size: 36px;
+    color: #5EB71B; /* Primary Green */
     margin-bottom: 30px;
-    color: #2a5934;
+    text-align: center;
 }
 
-.card {
+#projects .card {
     border: none;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
 
-.card:hover {
+#projects .card:hover {
     transform: scale(1.05);
 }
 
-.card-img-top {
+#projects .card img {
     border-radius: 8px 8px 0 0;
+    width: 100%;
+    height: auto;
     object-fit: cover;
-    height: 200px;
 }
 
-.card-body {
-    padding: 20px;
-}
-
-.card-title {
+#projects .card-title {
     font-size: 20px;
-    color: #333;
+    color: #848484; /* Dark Gray */
     margin-bottom: 15px;
 }
 
-.card-text {
+#projects .card-text {
     font-size: 16px;
-    color: #666;
+    color: #A2A2A2; /* Light Gray */
+}
+
+/* Nossos Clientes Section */
+#clients {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
+#clients h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #5EB71B; /* Primary Green */
+}
+
+.logo-client {
+    width: 100px;
+    height: auto;
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-client:hover {
+    transform: scale(1.1);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
 }
 
 /* Contact Section */
 #contact {
     background-color: #f4f4f4;
+    padding: 60px 0;
 }
 
 #contact h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #2a5934;
+    color: #5EB71B; /* Primary Green */
 }
 
-#contact p, label {
+#contact p, #contact label {
     font-size: 16px;
     color: #333;
 }
 
 #contact .form-control {
     border-radius: 4px;
+    padding: 10px;
 }
 
 #contact button {
-    background-color: #2a5934;
+    background-color: #5EB71B; /* Primary Green */
     border: none;
     padding: 10px 20px;
     border-radius: 4px;
@@ -166,28 +196,23 @@
 }
 
 #contact button:hover {
-    background-color: #1e4227;
+    background-color: #92E016; /* Secondary Green */
 }
 
-/* Footer Styles */
+/* Footer */
 footer {
-    background-color: #2a5934;
+    background-color: #5EB71B; /* Primary Green */
     color: white;
+    padding: 40px 0;
 }
 
 footer h5 {
     font-size: 18px;
-    margin-bottom: 20px;
-    color: white;
-}
-
-footer p, footer a {
-    font-size: 14px;
-    color: #ccc;
+    margin-bottom: 15px;
 }
 
 footer a {
-    text-decoration: none;
+    color: #A2A2A2; /* Light Gray */
     transition: color 0.3s ease;
 }
 
@@ -195,11 +220,31 @@ footer a:hover {
     color: #ffffff;
 }
 
-footer .fab {
-    margin-right: 10px;
+footer p {
+    color: #A2A2A2; /* Light Gray */
+    margin-top: 20px;
 }
 
-footer .text-center {
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
+/* Responsive Design */
+@media (max-width: 768px) {
+    #services .col-md-6 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    #services img {
+        margin: 0 auto 20px;
+    }
+
+    #projects h2,
+    #clients h2,
+    #contact h2 {
+        font-size: 28px;
+    }
+
+    #projects .card-title,
+    #clients h2,
+    #contact label {
+        font-size: 18px;
+    }
 }

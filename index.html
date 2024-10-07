@@ -4,97 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JCR Ambiental</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <!-- Cabeçalho -->
-    <header>
-        <div class="container">
-            <div class="logo">
-                <a href="#"><img src="https://fluowen.github.io/jcr-ambiental/images/00_Logo.png" alt="Logo JCR Ambiental"></a>
-            </div>
+    <header class="bg-primary py-3">
+        <div class="container d-flex justify-content-between align-items-center">
+            <a href="#">
+                <img src="https://fluowen.github.io/jcr-ambiental/images/00_Logo.png" alt="Logo JCR Ambiental" class="img-fluid" style="width: 150px;">
+            </a>
             <nav>
-                <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Quem Somos</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Projetos</a></li>
-                    <li><a href="#">Contato</a></li>
+                <ul class="nav">
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Quem Somos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Serviços</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Projetos</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white">Contato</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- Banner -->
-    <section class="banner">
-        <div class="banner-content">
-            <h1>Somos uma empresa especializada em Gestão de HSE, Consultoria e Auditoria</h1>
-            <p>
-                Laudos e Avaliações Técnicas, EGS e Gestão Ambiental. A JCR AMBIENTAL conta com um time altamente capacitado 
-                em identificar e propor soluções inteligentes e personalizadas a cada processo, com grande eficiência em Gestão de Riscos.
-            </p>
+    <section class="banner text-center text-white py-5" style="background-color: #2a5934;">
+        <div class="container">
+            <h1 class="display-4">Somos uma empresa especializada em Gestão de HSE, Consultoria e Auditoria</h1>
+            <p class="lead">Laudos e Avaliações Técnicas, EGS e Gestão Ambiental. A JCR AMBIENTAL conta com um time altamente capacitado para identificar e propor soluções inteligentes e personalizadas para cada processo, com grande eficiência em Gestão de Riscos.</p>
         </div>
     </section>
 
-    <section class="services">
+    <!-- Seção de Serviços -->
+    <section id="services" class="py-5 bg-light">
         <div class="container">
-            <h2>Nossos Serviços</h2>
-    
-            <div class="service-item">
-                <div class="service-content">
-                    <img src="https://jcrambiental.com.br/wp-content/uploads/2018/01/galeria-11.jpg" alt="Imagem de Gestão de HSE">
+            <h2 class="text-center text-primary mb-4">Nossos Serviços</h2>
+            <div class="row gy-4">
+                <div class="col-md-6 d-flex">
+                    <img src="https://jcrambiental.com.br/wp-content/uploads/2018/01/galeria-11.jpg" class="img-fluid rounded me-4" alt="Gestão de HSE" style="width: 150px;">
                     <div>
                         <h3>Gestão de HSE</h3>
-                        <p>Mão de obra especializada, Gestão de Segurança, Saúde e Meio Ambiente (HSE), Gestão de Riscos Operacionais, Gerenciamento Ambiental, Segurança em Distribuição e Segurança de Processos</p>
+                        <p>Mão de obra especializada, Gestão de Segurança, Saúde e Meio Ambiente (HSE), Gestão de Riscos Operacionais, Gerenciamento Ambiental, Segurança em Distribuição e Segurança de Processos.</p>
                     </div>
                 </div>
-            </div>
-    
-            <div class="service-item">
-                <div class="service-content">
-                    <img src="https://jcrambiental.com.br/wp-content/uploads/2018/01/galeria-8.jpg" alt="Imagem de Consultoria e Auditoria">
+
+                <div class="col-md-6 d-flex">
+                    <img src="https://jcrambiental.com.br/wp-content/uploads/2018/01/galeria-8.jpg" class="img-fluid rounded me-4" alt="Consultoria e Auditoria" style="width: 150px;">
                     <div>
                         <h3>Consultoria e Auditoria</h3>
-                        <p>Consultorias para diagnósticos e implementação de soluções e EHS, Assistência técnica e judicial, Diagnóstico de Riscos Operacionais, Auditorias sociais e regulatórias, Desenvolvimento de Políticas, Treinamento e Desenvolvimento</p>
+                        <p>Consultorias para diagnósticos e implementação de soluções e EHS, Assistência técnica e judicial, Diagnóstico de Riscos Operacionais, Auditorias sociais e regulatórias, Desenvolvimento de Políticas, Treinamento e Desenvolvimento.</p>
                     </div>
                 </div>
-            </div>
-    
-            <div class="service-item">
-                <div class="service-content">
-                    <img src="https://jcrambiental.com.br/wp-content/uploads/2018/01/galeria-2.jpg" alt="Imagem de Laudos e Avaliações Técnicas">
+
+                <div class="col-md-6 d-flex">
+                    <img src="https://jcrambiental.com.br/wp-content/uploads/2018/01/galeria-2.jpg" class="img-fluid rounded me-4" alt="Laudos e Avaliações Técnicas" style="width: 150px;">
                     <div>
                         <h3>Laudos e Avaliações Técnicas</h3>
-                        <p>Requisitos Legais, Identificação e avaliação dos agentes de risco, Elaboração do Laudo Técnico das Condições da Atividade do Trabalho (LTCAT), Análise Ergonômica, LTIP – Laudo Técnico de Insalubridade (NR 15) e Periculosidade (NR 16)</p>
+                        <p>Requisitos Legais, Identificação e avaliação dos agentes de risco, Elaboração do Laudo Técnico das Condições da Atividade do Trabalho (LTCAT), Análise Ergonômica, LTIP – Laudo Técnico de Insalubridade (NR 15) e Periculosidade (NR 16).</p>
                     </div>
                 </div>
-            </div>
-    
-            <div class="service-item">
-                <div class="service-content">
-                    <img src="https://jcrambiental.com.br/wp-content/uploads/2018/01/galeria-6.jpg" alt="Imagem de EGS e Gestão Ambiental">
+
+                <div class="col-md-6 d-flex">
+                    <img src="https://jcrambiental.com.br/wp-content/uploads/2018/01/galeria-6.jpg" class="img-fluid rounded me-4" alt="EGS e Gestão Ambiental" style="width: 150px;">
                     <div>
                         <h3>EGS e Gestão Ambiental</h3>
-                        <p>Documento para Gestão Segura de Resíduos, Mapa de restrição de uso de águas subterrâneas e Programa de Observação em Segurança Ambiental (POA)</p>
+                        <p>Documento para Gestão Segura de Resíduos, Mapa de restrição de uso de águas subterrâneas e Programa de Observação em Segurança Ambiental (POA).</p>
                     </div>
                 </div>
             </div>
         </div>
-        <section class="about-us">
-            <div class="container">
-                <div class="about-content">
-                    <div class="about-image">
-                        <img src="https://fluowen.github.io/jcr-ambiental/images/99_Founder.png" alt="José Faria - Fundador da JCR Ambiental">
-                    </div>
-                    <div class="about-text">
-                        <h2>Quem Somos</h2>
-                        <p>
-                            A <strong>JCR Ambiental</strong>, fundada por <strong>José Faria</strong>, traz mais de <strong>20 anos de experiência</strong> em Segurança, Saúde e Meio Ambiente (SSMA), atuando em segmentos como <strong>renováveis</strong>, <strong>hidrelétricas</strong>, <strong>agronegócio</strong> e <strong>óleo e gás</strong>. José Faria é graduado em <strong>Engenharia Ambiental</strong>, especializado em <strong>Segurança do Trabalho</strong> e possui pós-graduação em <strong>Administração para Engenheiros</strong>. Ele também atua como <strong>Perito Judicial</strong> e <strong>professor na ETEC</strong> de São Paulo. Sua expertise se destaca na criação de uma cultura de <strong>prevenção de acidentes</strong> e <strong>sustentabilidade</strong>, sempre alinhada à estratégia e governança corporativa.
-                        </p>
-                    </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="about-us" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="https://fluowen.github.io/jcr-ambiental/images/99_Founder.png" class="img-fluid rounded" alt="José Faria - Fundador da JCR Ambiental">
+                </div>
+                <div class="col-md-6">
+                    <h2 class="text-primary">Quem Somos</h2>
+                    <p class="lead">
+                        A <strong>JCR Ambiental</strong>, fundada por <strong>José Faria</strong>, traz mais de <strong>20 anos de experiência</strong> em Segurança, Saúde e Meio Ambiente (SSMA), atuando em segmentos como <strong>renováveis</strong>, <strong>hidrelétricas</strong>, <strong>agronegócio</strong> e <strong>óleo e gás</strong>.
+                    </p>
+                    <p>
+                        José Faria é graduado em <strong>Engenharia Ambiental</strong>, especializado em <strong>Segurança do Trabalho</strong> e possui pós-graduação em <strong>Administração para Engenheiros</strong>. Ele também atua como <strong>Perito Judicial</strong> e <strong>professor na ETEC</strong> de São Paulo. Sua expertise se destaca na criação de uma cultura de <strong>prevenção de acidentes</strong> e <strong>sustentabilidade</strong>, sempre alinhada à estratégia e governança corporativa.
+                    </p>
                 </div>
             </div>
-        </section>               
+        </div>
+    </section>
+
+    <!-- Scripts Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

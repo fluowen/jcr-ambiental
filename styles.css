@@ -6,25 +6,20 @@
     color: #ffffff;
     padding: 5rem 0;
     position: relative;
-    height: 100vh; /* Full viewport height */
+    min-height: 100vh; /* Ensure banner is at least 100% of the viewport height */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures text and carousel have separate space */
+    justify-content: space-between;
 }
 
 /* Carousel-Banner */
 #carousel-banner {
-    height: 65vh; /* Carousel takes up 65% of the section */
+    max-height: 65vh; /* Limit carousel height to 65% of the section */
 }
 
 #carousel-banner img {
-    height: 100%;
-    object-fit: cover;
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Slightly transparent control buttons */
+    max-height: 100%;
+    object-fit: cover; /* Ensure images cover the container without overflowing */
 }
 
 /* Floating Button */
@@ -32,22 +27,26 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: rgba(255, 255, 255, 0.1); /* White with 10% transparency */
+    background-color: white; /* Solid white */
     color: #000;
     padding: 10px 20px;
-    border-radius: 50px;
+    border-radius: 25px; /* Softer, rounded corners */
     z-index: 10;
     text-decoration: none;
+    width: 120px;
+    text-align: center;
+    font-size: 14px; /* Smaller font size for better readability */
+    line-height: 1.5; /* Allow button text to split into two lines */
 }
 
 .btn-floating:hover {
-    background-color: rgba(25, 124, 95, 0.993); /* Slightly more visible on hover */
+    background-color: #f0f0f0; /* Slightly darker on hover */
     color: #000;
 }
 
 /* Text Content Area */
 .banner-text {
-    height: 25vh; /* Text area now takes up 25% of the section */
+    height: 35vh; /* Text area now takes up 35% of the section */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -67,7 +66,7 @@
 /* Responsive adjustments using media queries */
 @media (max-width: 1200px) {
     #carousel-banner {
-        height: 60vh; /* Carousel height decreases on smaller screens */
+        max-height: 60vh; /* Carousel height decreases on smaller screens */
     }
 
     .banner-text {
@@ -77,7 +76,7 @@
 
 @media (max-width: 768px) {
     #carousel-banner {
-        height: 50vh; /* Reduce the carousel height on smaller screens */
+        max-height: 50vh; /* Reduce the carousel height on smaller screens */
     }
 
     .banner-text h1 {

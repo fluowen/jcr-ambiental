@@ -14,7 +14,7 @@
 
 /* Carousel-Banner */
 #carousel-banner {
-    height: 65vh; /* Carousel now occupies 65% of the section */
+    height: 65vh; /* Carousel takes up 65% of the section */
 }
 
 #carousel-banner img {
@@ -32,7 +32,7 @@
     position: absolute;
     top: 10px;
     left: 10px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.1); /* White with 10% transparency */
     color: #000;
     padding: 10px 20px;
     border-radius: 50px;
@@ -41,7 +41,7 @@
 }
 
 .btn-floating:hover {
-    background-color: rgba(255, 255, 255, 0.2); /* Slightly more visible on hover */
+    background-color: rgba(25, 124, 95, 0.993); /* Slightly more visible on hover */
     color: #000;
 }
 
@@ -62,6 +62,32 @@
 .banner-text p {
     font-size: 18px; /* P takes up 64% of text area */
     max-width: 64%;
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 1200px) {
+    #carousel-banner {
+        height: 60vh; /* Carousel height decreases on smaller screens */
+    }
+
+    .banner-text {
+        height: 30vh; /* Text area increases on smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    #carousel-banner {
+        height: 50vh; /* Reduce the carousel height on smaller screens */
+    }
+
+    .banner-text h1 {
+        font-size: 28px; /* Adjust H1 size on smaller screens */
+    }
+
+    .banner-text p {
+        font-size: 16px;
+        max-width: 100%; /* Text area expands fully */
+    }
 }
 
 /* Seção Clientes */

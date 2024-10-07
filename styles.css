@@ -9,17 +9,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden; /* Ensure no overlap or excess content spills */
+    overflow: hidden; /* Prevent overflow */
 }
 
 /* Carousel-Banner */
 #carousel-banner {
     width: 100%;
+    margin-bottom: 2rem; /* Add margin below the carousel to avoid text overlap */
 }
 
 #carousel-banner img {
-    width: 100%; /* Full width carousel images */
-    object-fit: cover; /* Ensure images fit within container without distortion */
+    width: 100%; /* Full width for carousel images */
+    object-fit: cover; /* Ensure images fit within the carousel without distorting */
 }
 
 /* Floating Button */
@@ -46,7 +47,7 @@
 
 /* Text Content Area */
 .banner-text {
-    padding: 20px 0; /* Adds some padding between the carousel and the text */
+    padding-top: 2rem; /* Ensure space between the carousel and the text */
 }
 
 .banner-text h1 {
@@ -59,7 +60,7 @@
     max-width: 100%;
 }
 
-/* Responsive adjustments */
+/* Responsive adjustments using media queries */
 @media (max-width: 1200px) {
     .banner-text h1 {
         font-size: 32px;
@@ -78,6 +79,7 @@
     .banner-text p {
         font-size: 14px;
     }
+}
 
 /* Seção Clientes */
 #clients {

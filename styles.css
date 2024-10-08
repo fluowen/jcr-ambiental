@@ -14,7 +14,7 @@ header a {
 }
 
 header img {
-    width: auto; /* Resize logo */
+    width: 20%; /* Resize logo */
     background-color: #363636ff; /* Logo background */
 }
 

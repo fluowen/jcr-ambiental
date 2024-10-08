@@ -99,11 +99,11 @@ header .nav-link:hover {
 .btn-floating {
     position: absolute;
     top: 10px;
-    left: 10px;
-    background-color: white; /* Solid white */
+    left: 25px;
+    background-color: #ffffff80; /* Solid white */
     color: #000;
     padding: 10px 20px;
-    border-radius: 25px; /* Softer, rounded corners */
+    border-radius: 20px; /* Softer, rounded corners */
     z-index: 10;
     text-decoration: none;
     width: 120px;

@@ -2,7 +2,7 @@
 
 /* Header */
 header {
-    background-color: #363636ff; /* Set header background to dark gray */
+    background-color: #848484; /* Set header background to dark gray */
     padding: 15px 0;
     position: relative;
     z-index: 10; /* Ensure header is above other content */
@@ -14,7 +14,7 @@ header a {
 
 header img {
     width: 150px; /* Resize logo */
-    background-color: #363636ff; /* Logo background */
+    background-color: #848484; /* Logo background */
 }
 
 header .nav-link {
@@ -154,13 +154,13 @@ header .nav-link:hover {
 
 /* Seção Clientes */
 #clients {
-    background-color: #f4f4f4;
+    background-color: #A2A2A2;
 }
 
 #clients h2 {
     font-size: 36px;
     margin-bottom: 30px;
-    color: #2a5934;
+    color: #ffffff;
 }
 
 .logo-client {
@@ -192,7 +192,7 @@ header .nav-link:hover {
 
 /* Seção de Projetos */
 #projects {
-    background-color: #f4f4f4;
+    background-color: #A2A2A2;
 }
 
 #projects h2 {
@@ -235,7 +235,7 @@ header .nav-link:hover {
 
 /* Contact Section */
 #contact {
-    background-color: #f4f4f4;
+    background-color: #A2A2A2;
 }
 
 #contact h2 {
@@ -264,12 +264,12 @@ header .nav-link:hover {
 }
 
 #contact button:hover {
-    background-color: #1e4227;
+    background-color: #848484;
 }
 
 /* Footer Styles */
 footer {
-    background-color: #2a5934;
+    background-color: #848484;
     color: white;
 }
 

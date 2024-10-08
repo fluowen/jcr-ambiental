@@ -2,7 +2,7 @@
 
 /* Header */
 header {
-    background-color: #848484; /* Set header background to dark gray */
+    background-color: #ffffff; /* Set header background to dark gray */
     padding: 15px 0;
     position: relative;
     z-index: 10; /* Ensure header is above other content */
@@ -13,12 +13,12 @@ header a {
 }
 
 header img {
-    width: 150px; /* Resize logo */
+    width: 100px; /* Resize logo */
     background-color: #ffffff; /* Logo background */
 }
 
 header .nav-link {
-    font-size: 18px; /* Increase font size */
+    font-size: 24px; /* Increase font size */
     color: #ffffff; /* White text */
     font-weight: bold; /* Bold text */
     margin-right: 20px;

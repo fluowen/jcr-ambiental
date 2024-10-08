@@ -74,7 +74,7 @@ header .nav-link:hover {
 
 /* Banner */
 .banner {
-    background: linear-gradient(90deg, #5EB71B 0%, #92E016 100%);
+    background: linear-gradient(90deg, #5eb71bff 0%, #92E016 100%);
     color: #ffffff;
     padding: 5rem 0;
     position: relative;

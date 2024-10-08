@@ -14,8 +14,8 @@ header a {
 }
 
 header img {
-    width: 10px; /* Resize logo */
-    background-color: #ffffff; /* Logo background */
+    width: auto; /* Resize logo */
+    background-color: #363636ff; /* Logo background */
 }
 
 header .nav-link {

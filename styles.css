@@ -123,7 +123,7 @@ header .nav-link:hover {
 }
 
 .banner-text h1 {
-    font-size: 36px;
+    font-size: 72px;
     margin-right: 20px;
 }
 
@@ -135,7 +135,7 @@ header .nav-link:hover {
 /* Responsive adjustments using media queries */
 @media (max-width: 1200px) {
     .banner-text h1 {
-        font-size: 32px;
+        font-size: 72px;
     }
 
     .banner-text p {

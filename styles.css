@@ -3,16 +3,14 @@
     height: 10vh;
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #848484;
-    /* Cor da navbar alterada */
+    background-color: #848484; /* Cor da navbar alterada */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .navbar-header-logo {
-    height: 60px;
-    /* Tamanho ajustado do logo */
+    height: 60px; /* Tamanho ajustado do logo */
     width: auto;
     align-self: center;
 }
@@ -20,29 +18,20 @@
 .navbar-header-nav {
     display: flex;
     align-items: center;
-    /* Alinhamento vertical dos itens do menu */
-    justify-content: flex-start;
-    /* Alinha os itens do menu à esquerda */
-    font-family: 'Montserrat', sans-serif;
-    /* Fonte Montserrat */
+    justify-content: space-between; /* Distribui os itens ao longo de 60% da largura */
+    font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
+    width: 60%; /* Define 60% da largura para os itens do menu */
 }
 
 .navbar-header-nav .nav-link {
-    font-size: 1.5rem;
-    /* Aumenta o tamanho da fonte em 20% */
-    color: white;
-    /* Cor branca para o texto */
-    font-weight: bold;
-    /* Negrito nos itens do menu */
-    margin-right: 20px;
-    /* Ajuste de espaçamento entre itens */
-    text-align: center;
-    /* Garante o alinhamento central do texto */
+    font-size: 1.5rem; /* Aumenta o tamanho da fonte em 20% */
+    color: white; /* Cor branca para o texto */
+    font-weight: bold; /* Negrito nos itens do menu */
+    text-align: center; /* Garante o alinhamento central do texto */
 }
 
 .navbar-header-nav .nav-link:hover {
-    color: #5EB71B;
-    /* Verde primário da JCR Ambiental */
+    color: #5EB71B; /* Verde primário da JCR Ambiental */
     transition: color 0.3s ease;
 }
 
@@ -55,8 +44,7 @@
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
-    align-self: center;
-    /* Alinhamento vertical do botão */
+    align-self: center; /* Alinhamento vertical do botão */
 }
 
 .btn-contact-navbar:hover {
@@ -78,33 +66,25 @@
         padding: 5px 10px;
     }
 
-    .navbar-header-nav .nav-link {
-        font-size: 1rem;
-    }
-
-    /* Oculta o menu linear em telas pequenas */
     .navbar-header-nav {
-        display: none;
+        display: none; /* Oculta o menu linear em telas pequenas */
     }
 
-    /* Exibe o menu hamburger em telas pequenas */
     .navbar-header-toggler {
-        display: block;
+        display: block; /* Exibe o menu hamburger em telas pequenas */
     }
 }
 
 @media (min-width: 993px) {
-
-    /* Exibe o menu linear em telas grandes */
     .navbar-header-nav {
-        display: flex;
+        display: flex; /* Exibe o menu linear em telas grandes */
     }
 
-    /* Oculta o menu hamburger em telas grandes */
     .navbar-header-toggler {
-        display: none;
+        display: none; /* Oculta o menu hamburger em telas grandes */
     }
 }
+
 
 /* Banner */
 .banner {

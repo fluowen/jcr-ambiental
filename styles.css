@@ -10,12 +10,10 @@ body {
     z-index: 1000;
     height: 10vh;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    background-color: #848484;
+    background-color: rgba(132, 132, 132, 0.8); /* 20% transparency */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(132, 132, 132, 0.8); /* 20% transparency */
-
 }
 
 .navbar-header-logo {
@@ -55,7 +53,6 @@ body {
 
 .btn-contact-navbar:hover {
     background-color: #4DA114;
-    border-color: #4DA114;
 }
 
 /* Media Queries for Responsiveness */
@@ -84,11 +81,6 @@ body {
     }
 }
 
-/* Ensure hamburger menu only shows on small screens */
-.navbar-header-toggler {
-    color: white;
-}
-
 .navbar-toggler-icon {
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="#92E016"><path stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
 }
@@ -96,11 +88,11 @@ body {
 /* Show links on larger screens and hide the hamburger */
 @media (min-width: 992px) {
     .navbar-header-toggler {
-        display: none; /* Hide the hamburger */
+        display: none;
     }
 
     .navbar-header-nav {
-        display: flex; /* Show the links */
+        display: flex;
     }
 }
 
@@ -123,25 +115,6 @@ body {
 #carousel-banner img {
     width: 100%;
     object-fit: cover;
-}
-
-/* Banner Text */
-.banner-text {
-    padding-top: 2rem;
-}
-
-.banner-text h1 {
-    font-size: 72px;
-}
-
-.banner-text p {
-    font-size: 18px;
-}
-
-.project-img {
-    height: 250px; /* Adjust as necessary */
-    object-fit: cover;
-    width: 100%;
 }
 
 /* Clients Section */
@@ -195,4 +168,71 @@ footer .fab {
 footer .text-center {
     border-top: 1px solid #ccc;
     padding-top: 15px;
+}
+
+/* Overlay Menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay-content {
+    width: 100%;
+    text-align: center;
+}
+
+.overlay-content a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #92E016;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content a:hover {
+    color: white;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .overlay-menu-toggler {
+        display: block;
+    }
+
+    .navbar-header-nav {
+        display: none;
+    }
+
+    .overlay {
+        display: block;
+    }
+}
+
+@media (min-width: 993px) {
+    .overlay-menu-toggler {
+        display: none;
+    }
+
+    .navbar-header-nav {
+        display: flex;
+    }
 }

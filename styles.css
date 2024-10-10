@@ -303,3 +303,14 @@ footer .text-center {
     border-top: 1px solid #ccc;
     padding-top: 15px;
 }
+
+.carousel img {
+    border: none;
+    outline: none;
+}
+
+/* Garantir que os logos no carrossel de clientes sejam responsivos */
+.logo-client {
+    max-width: 150px;
+    height: auto;
+}

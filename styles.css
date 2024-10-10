@@ -273,6 +273,11 @@
     flex-grow: 1;
 }
 
+.container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+}
+
 /* Contact Section */
 #contact {
     background-color: #A2A2A2;

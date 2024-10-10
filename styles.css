@@ -1,15 +1,16 @@
-/* Estilos exclusivos para a navbar-header */
+/* Estilos exclusivos para a navbar-header para evitar conflitos */
 .navbar-header {
     height: 10vh;
     width: 100%;
-    background-color: #848484; /* Cor da navbar */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #848484; /* Cor da navbar alterada */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .navbar-header-logo {
-    height: 60px;
+    height: 60px; /* Tamanho ajustado do logo */
     width: auto;
     align-self: center;
 }
@@ -17,7 +18,7 @@
 .navbar-header-nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-between; /* Distribui os itens ao longo de 60% da largura */
     font-family: 'Montserrat', sans-serif; /* Fonte Montserrat */
     width: 60%; /* Define 60% da largura para os itens do menu */
 }
@@ -26,7 +27,7 @@
     font-size: 1.5rem; /* Aumenta o tamanho da fonte em 20% */
     color: white; /* Cor branca para o texto */
     font-weight: bold; /* Negrito nos itens do menu */
-    text-align: center;
+    text-align: center; /* Garante o alinhamento central do texto */
 }
 
 .navbar-header-nav .nav-link:hover {
@@ -51,151 +52,6 @@
     border-color: #4DA114;
 }
 
-/* Estilos para o carrossel */
-.carousel {
-    position: relative;
-}
-
-.carousel-inner img {
-    height: 500px;
-    object-fit: cover;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 3%; /* Ajuste da largura dos controles */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Personalização das setas */
-    border-radius: 50%;
-}
-
-/* Estilos para a seção de serviços */
-#services {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
-
-#services h2 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    font-weight: bold;
-}
-
-#services .row {
-    margin-bottom: 20px;
-}
-
-#services .col-md-3 img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-#services h3 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-/* Estilos para a seção Sobre Nós */
-#about-us {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-}
-
-#about-us h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-}
-
-#about-us p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-}
-
-#about-us img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-}
-
-/* Estilos para a seção Clientes */
-#clients {
-    padding: 60px 0;
-    background-color: #f8f9fa;
-}
-
-#clients h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
-#clients .carousel-inner {
-    display: flex;
-    justify-content: center;
-}
-
-#clients img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-    max-width: 120px; /* Ajusta o tamanho máximo dos logos */
-    margin: 0 auto;
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%; /* Ajuste da largura dos controles */
-}
-
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-    background-color: rgba(0, 0, 0, 0.5); /* Personalização das setas */
-    border-radius: 50%;
-}
-
-
-/* Estilos para a seção Projetos */
-#projects {
-    background-color: #f8f9fa;
-    padding: 60px 0;
-}
-
-#projects h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 40px;
-}
-
-#projects h3 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-#projects p {
-    font-size: 1.2rem;
-}
-
-/* Estilos para o Footer */
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 40px 0;
-    text-align: center;
-}
-
-footer p {
-    margin: 0;
-    font-size: 1rem;
-}
-
-/* Responsividade */
 @media (max-width: 992px) {
     .navbar-header {
         height: auto;
@@ -227,4 +83,255 @@ footer p {
     .navbar-header-toggler {
         display: none; /* Oculta o menu hamburger em telas grandes */
     }
+}
+
+
+/* Banner */
+.banner {
+    background: linear-gradient(90deg, #5eb71bff 0%, #92E016 100%);
+    color: #ffffff;
+    padding: 5rem 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    /* Prevent overflow */
+}
+
+/* Carousel-Banner */
+#carousel-banner {
+    width: 100%;
+    margin-bottom: 2rem;
+    /* Add margin below the carousel to avoid text overlap */
+}
+
+#carousel-banner img {
+    width: 100%;
+    /* Full width for carousel images */
+    object-fit: cover;
+    /* Ensure images fit within the carousel without distorting */
+}
+
+/* Floating Button */
+.btn-floating {
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    background-color: #ffffff80;
+    /* Solid white */
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 20px;
+    /* Softer, rounded corners */
+    z-index: 10;
+    text-decoration: none;
+    width: 120px;
+    text-align: center;
+    font-size: 14px;
+    /* Smaller font size for better readability */
+    line-height: 1.5;
+    /* Allow button text to split into two lines */
+}
+
+.btn-floating:hover {
+    background-color: #f0f0f0;
+    /* Slightly darker on hover */
+    color: #000;
+}
+
+/* Text Content Area */
+.banner-text {
+    padding-top: 2rem;
+    /* Ensure space between the carousel and the text */
+}
+
+.banner-text h1 {
+    font-size: 72px;
+    margin-right: 20px;
+}
+
+.banner-text p {
+    font-size: 18px;
+    max-width: 100%;
+}
+
+/* Responsive adjustments using media queries */
+@media (max-width: 1200px) {
+    .banner-text h1 {
+        font-size: 72px;
+    }
+
+    .banner-text p {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .banner-text h1 {
+        font-size: 28px;
+    }
+
+    .banner-text p {
+        font-size: 14px;
+    }
+}
+
+/* Seção Clientes */
+#clients {
+    background-color: #A2A2A2;
+}
+
+#clients h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 36px;
+    color: #ffffff;
+}
+
+.logo-client {
+    width: 100px;
+    /* Tamanho ajustado para que 5 logos caibam confortavelmente */
+    height: 100px;
+    /* Mantém as proporções com altura e largura definidas */
+    object-fit: contain;
+    /* Garante que os logos não fiquem distorcidos */
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-client:hover {
+    transform: scale(1.05);
+    /* Reduz o zoom para um efeito mais sutil */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+    /* Controla o tamanho das setas de navegação */
+}
+
+.d-flex.justify-content-around {
+    gap: 20px;
+    /* Espaçamento entre os logos */
+}
+
+@media (max-width: 768px) {
+    #clients img {
+        max-width: 100%;
+    }
+}
+
+/* Seção de Projetos */
+#projects {
+    background-color: #A2A2A2;
+}
+
+#projects h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2a5934;
+}
+
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    border-radius: 8px 8px 0 0;
+    object-fit: cover;
+    height: 200px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.card-text {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Contact Section */
+#contact {
+    background-color: #A2A2A2;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #2a5934;
+}
+
+#contact p,
+label {
+    font-size: 16px;
+    color: #333;
+}
+
+#contact .form-control {
+    border-radius: 4px;
+}
+
+#contact button {
+    background-color: #2a5934;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #848484;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #848484;
+    color: white;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+footer p,
+footer a {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer .fab {
+    margin-right: 10px;
+}
+
+footer .text-center {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
 }

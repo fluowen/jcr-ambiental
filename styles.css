@@ -96,7 +96,7 @@ body {
 
 /* Banner */
 .banner {
-    background: linear-gradient(90deg, #5eb71bff 0%, #92E016 100%);
+    background-color: #5eb71bff; /* Cor de fundo alterada */
     color: #ffffff;
     padding: 5rem 0;
     position: relative;

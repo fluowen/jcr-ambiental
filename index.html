@@ -50,24 +50,47 @@
     <!-- Banner -->
     <section class="banner text-white py-5">
         <div class="container-fluid position-relative" style="max-width: 96%;">
-
             <!-- Carousel-Banner -->
-            <div id="carousel-banner" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                <!-- Ajuste de intervalo -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item active" data-bs-interval="10000">
                         <img src="images/01_Missao.png" class="d-block w-100" alt="Missão">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Missão</h5>
+                            <p>Nossa missão é fornecer soluções ambientais eficientes e sustentáveis.</p>
+                        </div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item" data-bs-interval="2000">
                         <img src="images/02_Visao.png" class="d-block w-100" alt="Visão">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Visão</h5>
+                            <p>Ser referência em gestão ambiental inovadora e sustentável.</p>
+                        </div>
                     </div>
                     <div class="carousel-item">
                         <img src="images/03_Valores.png" class="d-block w-100" alt="Valores">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h5>Valores</h5>
+                            <p>Integridade, sustentabilidade e inovação em todas as nossas ações.</p>
+                        </div>
                     </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </section>
+    </section>    
 
     <section id="projects" class="py-5 bg-light">
         <div class="container" style="max-width: 96%;"> <!-- Define 96% da largura para 2% de borda lateral -->

@@ -17,9 +17,9 @@ body {
 }
 
 .navbar-header-logo {
-    max-height: 60px; /* Adjust size as needed */
-    width: auto;
-    height: auto;
+    max-height: 60px; /* Adjust the height to fit within the navbar */
+    width: auto;      /* Ensure aspect ratio is maintained */
+    margin-right: 20px; /* Space between logo and other navbar items */
 }
 
 .navbar-header-nav {

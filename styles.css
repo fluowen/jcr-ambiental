@@ -265,7 +265,7 @@
 
 /* Garantir que os cards tenham o mesmo tamanho e estejam centralizados com bordas laterais */
 .container {
-    max-width: 80%; /* Define que a largura máxima seja 80%, garantindo bordas de 10% */
+    max-width: 90%; /* Define que a largura máxima seja 90%, garantindo bordas de 10% */
 }
 
 /* Footer Styles */

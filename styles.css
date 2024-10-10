@@ -4,31 +4,43 @@
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     background-color: #848484;
+    /* Cor da navbar alterada */
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 .navbar-header-logo {
-    height: 60px; /* Tamanho ajustado do logo */
+    height: 60px;
+    /* Tamanho ajustado do logo */
     width: auto;
     align-self: center;
 }
 
 .navbar-header-nav {
     display: flex;
-    align-items: center; /* Alinhamento vertical dos itens do menu */
-    justify-content: space-around;
+    align-items: center;
+    /* Alinhamento vertical dos itens do menu */
+    justify-content: space-between;
+    /* Distribui bem os itens na horizontal */
+    font-family: 'Montserrat', sans-serif;
+    /* Fonte Montserrat */
 }
 
 .navbar-header-nav .nav-link {
-    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
-    color: #333; /* Cor mais forte */
-    font-weight: bold; /* Negrito nos itens do menu */
+    font-size: 1.5rem;
+    /* Aumenta o tamanho da fonte em 20% */
+    color: white;
+    /* Cor branca para o texto */
+    font-weight: bold;
+    /* Negrito nos itens do menu */
+    margin-right: 20px;
+    /* Ajuste de espaçamento entre itens */
 }
 
 .navbar-header-nav .nav-link:hover {
-    color: #5EB71B; /* Verde primário da JCR Ambiental */
+    color: #5EB71B;
+    /* Verde primário da JCR Ambiental */
     transition: color 0.3s ease;
 }
 
@@ -41,7 +53,8 @@
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
-    align-self: center; /* Alinhamento vertical do botão */
+    align-self: center;
+    /* Alinhamento vertical do botão */
 }
 
 .btn-contact-navbar:hover {
@@ -79,6 +92,7 @@
 }
 
 @media (min-width: 993px) {
+
     /* Exibe o menu linear em telas grandes */
     .navbar-header-nav {
         display: flex;
@@ -88,253 +102,253 @@
     .navbar-header-toggler {
         display: none;
     }
-}
-/* Banner */
-.banner {
-    background: linear-gradient(90deg, #5eb71bff 0%, #92E016 100%);
-    color: #ffffff;
-    padding: 5rem 0;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    overflow: hidden;
-    /* Prevent overflow */
-}
 
-/* Carousel-Banner */
-#carousel-banner {
-    width: 100%;
-    margin-bottom: 2rem;
-    /* Add margin below the carousel to avoid text overlap */
-}
+    /* Banner */
+    .banner {
+        background: linear-gradient(90deg, #5eb71bff 0%, #92E016 100%);
+        color: #ffffff;
+        padding: 5rem 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        overflow: hidden;
+        /* Prevent overflow */
+    }
 
-#carousel-banner img {
-    width: 100%;
-    /* Full width for carousel images */
-    object-fit: cover;
-    /* Ensure images fit within the carousel without distorting */
-}
+    /* Carousel-Banner */
+    #carousel-banner {
+        width: 100%;
+        margin-bottom: 2rem;
+        /* Add margin below the carousel to avoid text overlap */
+    }
 
-/* Floating Button */
-.btn-floating {
-    position: absolute;
-    top: 10px;
-    left: 25px;
-    background-color: #ffffff80;
-    /* Solid white */
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 20px;
-    /* Softer, rounded corners */
-    z-index: 10;
-    text-decoration: none;
-    width: 120px;
-    text-align: center;
-    font-size: 14px;
-    /* Smaller font size for better readability */
-    line-height: 1.5;
-    /* Allow button text to split into two lines */
-}
+    #carousel-banner img {
+        width: 100%;
+        /* Full width for carousel images */
+        object-fit: cover;
+        /* Ensure images fit within the carousel without distorting */
+    }
 
-.btn-floating:hover {
-    background-color: #f0f0f0;
-    /* Slightly darker on hover */
-    color: #000;
-}
+    /* Floating Button */
+    .btn-floating {
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        background-color: #ffffff80;
+        /* Solid white */
+        color: #000;
+        padding: 10px 20px;
+        border-radius: 20px;
+        /* Softer, rounded corners */
+        z-index: 10;
+        text-decoration: none;
+        width: 120px;
+        text-align: center;
+        font-size: 14px;
+        /* Smaller font size for better readability */
+        line-height: 1.5;
+        /* Allow button text to split into two lines */
+    }
 
-/* Text Content Area */
-.banner-text {
-    padding-top: 2rem;
-    /* Ensure space between the carousel and the text */
-}
+    .btn-floating:hover {
+        background-color: #f0f0f0;
+        /* Slightly darker on hover */
+        color: #000;
+    }
 
-.banner-text h1 {
-    font-size: 72px;
-    margin-right: 20px;
-}
+    /* Text Content Area */
+    .banner-text {
+        padding-top: 2rem;
+        /* Ensure space between the carousel and the text */
+    }
 
-.banner-text p {
-    font-size: 18px;
-    max-width: 100%;
-}
-
-/* Responsive adjustments using media queries */
-@media (max-width: 1200px) {
     .banner-text h1 {
         font-size: 72px;
+        margin-right: 20px;
     }
 
     .banner-text p {
-        font-size: 16px;
-    }
-}
-
-@media (max-width: 768px) {
-    .banner-text h1 {
-        font-size: 28px;
-    }
-
-    .banner-text p {
-        font-size: 14px;
-    }
-}
-
-/* Seção Clientes */
-#clients {
-    background-color: #A2A2A2;
-}
-
-#clients h2 {
-    font-size: 36px;
-    font-weight: bold;
-    margin-bottom: 36px;
-    color: #ffffff;
-}
-
-.logo-client {
-    width: 100px;
-    /* Tamanho ajustado para que 5 logos caibam confortavelmente */
-    height: 100px;
-    /* Mantém as proporções com altura e largura definidas */
-    object-fit: contain;
-    /* Garante que os logos não fiquem distorcidos */
-    padding: 10px;
-    transition: transform 0.3s ease;
-}
-
-.logo-client:hover {
-    transform: scale(1.05);
-    /* Reduz o zoom para um efeito mais sutil */
-}
-
-.carousel-control-prev,
-.carousel-control-next {
-    width: 5%;
-    /* Controla o tamanho das setas de navegação */
-}
-
-.d-flex.justify-content-around {
-    gap: 20px;
-    /* Espaçamento entre os logos */
-}
-
-@media (max-width: 768px) {
-    #clients img {
+        font-size: 18px;
         max-width: 100%;
     }
-}
 
-/* Seção de Projetos */
-#projects {
-    background-color: #A2A2A2;
-}
+    /* Responsive adjustments using media queries */
+    @media (max-width: 1200px) {
+        .banner-text h1 {
+            font-size: 72px;
+        }
 
-#projects h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #2a5934;
-}
+        .banner-text p {
+            font-size: 16px;
+        }
+    }
 
-.card {
-    border: none;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-}
+    @media (max-width: 768px) {
+        .banner-text h1 {
+            font-size: 28px;
+        }
 
-.card:hover {
-    transform: scale(1.05);
-}
+        .banner-text p {
+            font-size: 14px;
+        }
+    }
 
-.card-img-top {
-    border-radius: 8px 8px 0 0;
-    object-fit: cover;
-    height: 200px;
-}
+    /* Seção Clientes */
+    #clients {
+        background-color: #A2A2A2;
+    }
 
-.card-body {
-    padding: 20px;
-}
+    #clients h2 {
+        font-size: 36px;
+        font-weight: bold;
+        margin-bottom: 36px;
+        color: #ffffff;
+    }
 
-.card-title {
-    font-size: 20px;
-    color: #333;
-    margin-bottom: 15px;
-}
+    .logo-client {
+        width: 100px;
+        /* Tamanho ajustado para que 5 logos caibam confortavelmente */
+        height: 100px;
+        /* Mantém as proporções com altura e largura definidas */
+        object-fit: contain;
+        /* Garante que os logos não fiquem distorcidos */
+        padding: 10px;
+        transition: transform 0.3s ease;
+    }
 
-.card-text {
-    font-size: 16px;
-    color: #666;
-}
+    .logo-client:hover {
+        transform: scale(1.05);
+        /* Reduz o zoom para um efeito mais sutil */
+    }
 
-/* Contact Section */
-#contact {
-    background-color: #A2A2A2;
-}
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+        /* Controla o tamanho das setas de navegação */
+    }
 
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #2a5934;
-}
+    .d-flex.justify-content-around {
+        gap: 20px;
+        /* Espaçamento entre os logos */
+    }
 
-#contact p,
-label {
-    font-size: 16px;
-    color: #333;
-}
+    @media (max-width: 768px) {
+        #clients img {
+            max-width: 100%;
+        }
+    }
 
-#contact .form-control {
-    border-radius: 4px;
-}
+    /* Seção de Projetos */
+    #projects {
+        background-color: #A2A2A2;
+    }
 
-#contact button {
-    background-color: #2a5934;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: white;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
+    #projects h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #2a5934;
+    }
 
-#contact button:hover {
-    background-color: #848484;
-}
+    .card {
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
 
-/* Footer Styles */
-footer {
-    background-color: #848484;
-    color: white;
-}
+    .card:hover {
+        transform: scale(1.05);
+    }
 
-footer h5 {
-    font-size: 18px;
-    margin-bottom: 20px;
-    color: white;
-}
+    .card-img-top {
+        border-radius: 8px 8px 0 0;
+        object-fit: cover;
+        height: 200px;
+    }
 
-footer p,
-footer a {
-    font-size: 14px;
-    color: #ccc;
-}
+    .card-body {
+        padding: 20px;
+    }
 
-footer a {
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
+    .card-title {
+        font-size: 20px;
+        color: #333;
+        margin-bottom: 15px;
+    }
 
-footer a:hover {
-    color: #ffffff;
-}
+    .card-text {
+        font-size: 16px;
+        color: #666;
+    }
 
-footer .fab {
-    margin-right: 10px;
-}
+    /* Contact Section */
+    #contact {
+        background-color: #A2A2A2;
+    }
 
-footer .text-center {
-    border-top: 1px solid #ccc;
-    padding-top: 15px;
-}
+    #contact h2 {
+        font-size: 36px;
+        margin-bottom: 30px;
+        color: #2a5934;
+    }
+
+    #contact p,
+    label {
+        font-size: 16px;
+        color: #333;
+    }
+
+    #contact .form-control {
+        border-radius: 4px;
+    }
+
+    #contact button {
+        background-color: #2a5934;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 4px;
+        color: white;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+    }
+
+    #contact button:hover {
+        background-color: #848484;
+    }
+
+    /* Footer Styles */
+    footer {
+        background-color: #848484;
+        color: white;
+    }
+
+    footer h5 {
+        font-size: 18px;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    footer p,
+    footer a {
+        font-size: 14px;
+        color: #ccc;
+    }
+
+    footer a {
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    footer a:hover {
+        color: #ffffff;
+    }
+
+    footer .fab {
+        margin-right: 10px;
+    }
+
+    footer .text-center {
+        border-top: 1px solid #ccc;
+        padding-top: 15px;
+    }

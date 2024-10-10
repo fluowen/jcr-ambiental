@@ -238,7 +238,8 @@
 
 #projects .card img {
     width: 100%;
-    height: auto;
+    height: 250px; /* Definindo altura uniforme para todas as imagens */
+    object-fit: cover; /* Garante que a imagem seja ajustada uniformemente sem distorção */
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
 }
@@ -246,8 +247,8 @@
 #projects .card-body {
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 #projects .card-title {
@@ -259,6 +260,7 @@
 #projects .card-text {
     font-size: 1.2rem;
     line-height: 1.6;
+    flex-grow: 1; /* Faz com que o texto cresça proporcionalmente */
 }
 
 /* Garantir que os cards tenham o mesmo tamanho e ocupem o máximo de espaço disponível */

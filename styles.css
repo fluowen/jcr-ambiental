@@ -263,54 +263,9 @@
     flex-grow: 1;
 }
 
-/* Responsividade e distribuição */
-#projects .col-lg-3, 
-#projects .col-md-6 {
-    display: flex;
-}
-
-#projects .card {
-    flex-grow: 1;
-}
-
-.container-fluid {
-    padding-left: 0;
-    padding-right: 0;
-}
-
-/* Contact Section */
-#contact {
-    background-color: #A2A2A2;
-}
-
-#contact h2 {
-    font-size: 36px;
-    margin-bottom: 30px;
-    color: #2a5934;
-}
-
-#contact p,
-label {
-    font-size: 16px;
-    color: #333;
-}
-
-#contact .form-control {
-    border-radius: 4px;
-}
-
-#contact button {
-    background-color: #2a5934;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    color: white;
-    font-size: 16px;
-    transition: background-color 0.3s ease;
-}
-
-#contact button:hover {
-    background-color: #848484;
+/* Garantir que os cards tenham o mesmo tamanho e estejam centralizados com bordas laterais */
+.container {
+    max-width: 80%; /* Define que a largura máxima seja 80%, garantindo bordas de 10% */
 }
 
 /* Footer Styles */

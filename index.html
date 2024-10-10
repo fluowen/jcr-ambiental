@@ -51,46 +51,37 @@
         </div>
     </nav>
     -->
-    <nav class="navbar-header navbar-expand-lg">
+    <nav class="navbar-header">
         <div class="container-fluid d-flex align-items-center justify-content-between">
-            <a class="navbar-header-brand" href="#">
-                <img src="images/00_Logo.png" alt="JCR Ambiental Logo" class="navbar-header-logo" loading="lazy">
+            <a class="navbar-header-logo" href="#">
+                <img src="images/00_Logo.png" alt="Logo">
             </a>
-            <button class="overlay-menu-toggler ms-auto d-lg-none" onclick="openOverlayMenu()">
+    
+            <!-- Toggler for small screens -->
+            <button class="overlay-menu-toggler" onclick="openNav()">
                 &#9776;
             </button>
-            <div class="collapse navbar-collapse justify-content-between d-none d-lg-flex" id="navbarHeaderNav">
-                <ul class="navbar-header-nav navbar-nav mx-auto w-60 d-flex justify-content-between">
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://fluowen.github.io/jcr-ambiental/#projects">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://fluowen.github.io/jcr-ambiental/#about-us">Sobre nós</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://fluowen.github.io/jcr-ambiental/#logos-carousel">Clientes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="https://fluowen.github.io/jcr-ambiental/#footer">Contatos</a>
-                    </li>
-                    <a href="https://wa.me/5511987189188" class="btn-contact-navbar ml-lg-3" target="_blank">Fale
-                        Conosco</a>
-                </ul>
+    
+            <!-- Normal navigation links for larger screens -->
+            <div class="navbar-header-nav">
+                <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#about">About Us</a>
+                <a class="nav-link" href="#clients">Clients</a>
+                <a class="btn-contact-navbar" href="https://wa.me/5511987189188" target="_blank">Fale Conosco</a>
             </div>
         </div>
     </nav>
-
+    
     <!-- Overlay Menu -->
-    <div id="overlayMenu" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeOverlayMenu()">&times;</a>
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="https://fluowen.github.io/jcr-ambiental/#projects">Serviços</a>
-            <a href="https://fluowen.github.io/jcr-ambiental/#about-us">Sobre nós</a>
-            <a href="https://fluowen.github.io/jcr-ambiental/#logos-carousel">Clientes</a>
-            <a href="https://fluowen.github.io/jcr-ambiental/#footer">Contatos</a>
-            <a href="https://wa.me/5511987189188" target="_blank" class="btn-contact-navbar">Fale Conosco</a>
+            <a href="#projects">Projects</a>
+            <a href="#about">About Us</a>
+            <a href="#clients">Clients</a>
+            <a href="https://wa.me/5511987189188" class="btn-contact-navbar" target="_blank">Fale Conosco</a>
         </div>
-    </div>
+    </div>    
 
     <!-- Banner -->
     <section class="banner text-white py-5">

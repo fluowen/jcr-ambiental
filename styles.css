@@ -9,35 +9,29 @@
     justify-content: space-between;
 }
 
-.navbar-header-brand img {
-    height: 60px;
-    /* Ajuste da altura do logo */
+.navbar-header-logo {
+    height: 60px; /* Tamanho ajustado do logo */
     width: auto;
+    align-self: center;
 }
 
 .navbar-header-nav {
     display: flex;
-    align-items: center;
-    /* Alinhamento vertical dos itens do menu */
+    align-items: center; /* Alinhamento vertical dos itens do menu */
     justify-content: space-around;
 }
 
 .navbar-header-nav .nav-link {
-    font-size: 1.2rem;
-    /* Aumenta o tamanho da fonte */
-    color: #333;
-    /* Cor mais forte */
-    font-weight: bold;
-    /* Negrito nos itens do menu */
+    font-size: 1.2rem; /* Aumenta o tamanho da fonte */
+    color: #333; /* Cor mais forte */
+    font-weight: bold; /* Negrito nos itens do menu */
 }
 
 .navbar-header-nav .nav-link:hover {
-    color: #5EB71B;
-    /* Verde primário da JCR Ambiental */
+    color: #5EB71B; /* Verde primário da JCR Ambiental */
     transition: color 0.3s ease;
 }
 
-/* Estilo exclusivo para o botão de contato na navbar */
 .btn-contact-navbar {
     background-color: #5EB71B;
     border-color: #5EB71B;
@@ -47,8 +41,7 @@
     font-weight: bold;
     text-align: center;
     border-radius: 5px;
-    align-self: center;
-    /* Alinhamento vertical do botão */
+    align-self: center; /* Alinhamento vertical do botão */
 }
 
 .btn-contact-navbar:hover {
@@ -61,7 +54,7 @@
         height: auto;
     }
 
-    .navbar-header-brand img {
+    .navbar-header-logo {
         height: 50px;
     }
 
@@ -73,8 +66,29 @@
     .navbar-header-nav .nav-link {
         font-size: 1rem;
     }
+
+    /* Oculta o menu linear em telas pequenas */
+    .navbar-header-nav {
+        display: none;
+    }
+
+    /* Exibe o menu hamburger em telas pequenas */
+    .navbar-header-toggler {
+        display: block;
+    }
 }
 
+@media (min-width: 993px) {
+    /* Exibe o menu linear em telas grandes */
+    .navbar-header-nav {
+        display: flex;
+    }
+
+    /* Oculta o menu hamburger em telas grandes */
+    .navbar-header-toggler {
+        display: none;
+    }
+}
 /* Banner */
 .banner {
     background: linear-gradient(90deg, #5eb71bff 0%, #92E016 100%);

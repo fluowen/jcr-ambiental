@@ -1,6 +1,7 @@
-// Carrossel irá mudar os slides automaticamente a cada 5 segundos
-var myCarousel = document.querySelector('#carouselExampleIndicators')
-var carousel = new bootstrap.Carousel(myCarousel, {
-  interval: 5000,
-  wrap: true
-})
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}

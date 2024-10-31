@@ -19,16 +19,13 @@
 </head>
 
 <body>
-
     <!--
     <nav class="navbar-header navbar-expand-lg" style="background-color: #1E1F23;">
         <div class="container-fluid d-flex align-items-center justify-content-left">
-            
             <button class="overlay-menu-toggler" onclick="openNav()">
                 &#9776;
             </button>
 
-            
             <div class="collapse navbar-collapse justify-content-center" id="navbarHeaderNav">
                 <ul class="navbar-header-nav navbar-nav w-100 justify-content-between">
                     <li class="nav-item">
@@ -54,63 +51,15 @@
             </div>
         </div>
     </nav>
-    -->
-    
-    <section class="section section-container">
-        <nav class="navbar bg-body-tertiary fixed-top">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Offcanvas navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li>
-                          <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                      </ul>
-                    </li>
-                  </ul>
-                  <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </nav>
-    </section>
 
-    <!-- Overlay Menu -->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
             <a href="#about">JCR Ambiental</a>
             <a href="#projects">Serviços</a>
             <a href="#presence">Presença</a>
-            <!--<a href="#esg">ESG</a>-->
             <a href="#team">Time</a>
             <a href="#logos">Clientes</a>
-            <!--<a href="#footer">Contatos</a>-->
             <a href="https://wa.me/5511987189188" class="btn btn-outline-light" href="https://wa.me/5511987189188"
                 target="_blank">
                 <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg"></img>
@@ -118,6 +67,35 @@
             </a>
         </div>
     </div>
+    -->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="images/JCR_Logo.jpeg" alt="JCR Ambiental Logo" width="128" height="72">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#projects">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#team">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#logos">Clientes</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Banner -->
     <section class="banner text-white section section-container mt-5" style="background-color: #ffffff;">

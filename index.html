@@ -19,6 +19,8 @@
 </head>
 
 <body>
+
+    <!--
     <nav class="navbar-header navbar-expand-lg" style="background-color: #1E1F23;">
         <div class="container-fluid d-flex align-items-center justify-content-left">
             <button class="overlay-menu-toggler" onclick="openNav()">
@@ -66,42 +68,36 @@
             </a>
         </div>
     </div>
+    -->
 
-    <!--
-    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" style="background-color: #1E1F23;">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
             <img src="images/JCR_Logo.jpeg" alt="JCR Ambiental Logo" width="128" height="72">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg"
-            aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+          </a>
+          <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg"
-            aria-labelledby="navbarOffcanvasLgLabel">
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
-                aria-labelledby="offcanvasNavbarLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-                    <img src="images/JCR_Logo.jpeg" alt="JCR Ambiental Logo" width="128" height="72">
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body" style="background-color: #1E1F23;">
-                    <ul class="navbar-nav justify-content-start flex-grow-1 pe-3">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#projects">Serviços</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#team">Time</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#clients">Clientes</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+          </button>
+      
+          <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Dashboard</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Notifications</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Profile</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Switch account</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
--->
+      </nav>
+
     <!-- Banner -->
     <section class="banner text-white section section-container mt-5" style="background-color: #ffffff;">
         <!--<div class="container-fluid position-relative" style="max-width: 96%;">-->

@@ -21,22 +21,22 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar-header navbar-expand-lg" style="background-color: #1E1F23;">
-        <div class="navbar__container container-fluid">
+        <div class="navbar__container container-fluid d-flex align-items-center">
             <!-- Logo -->
             <a class="navbar-brand" href="#about" aria-label="JCR Ambiental">
                 <img src="images/JCR_Logo.jpeg" alt="JCR Ambiental Logo" class="navbar__logo" width="96" height="54"
                     loading="eager">
             </a>
-
+    
             <!-- Menu Hamburguer -->
-            <button class="overlay-menu-toggler d-lg-none" type="button" onclick="openNav()"
+            <button class="overlay-menu-toggler d-lg-none ms-auto" type="button" onclick="openNav()"
                 aria-label="Abrir menu de navegação" aria-expanded="false">
                 <span class="navbar-toggler-icon">&#9776;</span>
             </button>
-
+    
             <!-- Menu Desktop -->
             <div class="collapse navbar-collapse justify-content-center" id="navbarHeaderNav">
-                <ul class="navbar-header-nav navbar-nav w-75 justify-content-end">
+                <ul class="navbar-header-nav navbar-nav d-flex align-items-center">
                     <li class="nav-item">
                         <a class="nav-link" href="#projects">Serviços</a>
                     </li>
@@ -46,9 +46,7 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#logos">Clientes</a>
                     </li>
-                </ul>
-                <ul class="navbar-header-nav navbar-nav w-25 justify-content-end">
-                    <li class="nav-item">
+                    <li class="nav-item ms-lg-auto">
                         <a class="btn btn-outline-light" href="https://wa.me/5511987189188" target="_blank"
                             rel="noopener noreferrer" aria-label="Contato via WhatsApp">
                             <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="WhatsApp">
@@ -58,7 +56,7 @@
             </div>
         </div>
     </nav>
-
+    
     <!-- Overlay Menu -->
     <div id="myNav" class="overlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Fechar menu">

@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>JCR Ambiental - Consultoria Especializada em HSE e Gestão Ambiental</title>
+    <meta name="title" content="JCR Ambiental - Consultoria em HSE e Gestão Ambiental">
+    <meta name="description" content="Há 20 anos oferecendo soluções em HSE, ESG, Segurança do Trabalho e Gestão Ambiental. Especialistas em consultoria para setores de energia, indústria e agronegócio.">
+    <meta name="keywords" content="HSE, ESG, Gestão Ambiental, Segurança do Trabalho, Consultoria Ambiental, Sustentabilidade, LTCAT, Análise Ergonômica, Laudos Técnicos, Consultoria HSE, Gestão de Riscos, Auditoria Ambiental">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="JCR Ambiental - Especialistas em HSE e Gestão Ambiental">
+    <meta property="og:description" content="Soluções completas em HSE, ESG e Gestão Ambiental. 20 anos de experiência em renováveis, hidrelétricas, agronegócio e óleo e gás.">
+    <meta property="og:image" content="images/JCR_Logo.jpeg">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JCR Ambiental - Consultoria em HSE">
+    <meta name="twitter:description" content="Consultoria especializada em HSE, ESG e Gestão Ambiental. Soluções sustentáveis para sua empresa.">
+    <meta name="twitter:image" content="images/JCR_Logo.jpeg">
+
+    <!-- Preload de recursos críticos -->
+    <link rel="preload" href="images/JCR_Logo.jpeg" as="image">
+    <link rel="preload" href="images/Slide2.PNG" as="image">
+
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Schema.org markup para SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "JCR Ambiental",
+        "description": "Consultoria especializada em HSE, ESG e Gestão Ambiental com mais de 20 anos de experiência.",
+        "image": "images/JCR_Logo.jpeg",
+        "areaServed": "BR",
+        "serviceType": ["Consultoria HSE", "Gestão Ambiental", "ESG", "Segurança do Trabalho"],
+        "priceRange": "$$"
+    }
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+<nav class="navbar-header navbar-expand-lg" style="background-color: #1E1F23;">
+    <div class="navbar__container container-fluid">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#about" aria-label="JCR Ambiental">
+            <img src="images/JCR_Logo.jpeg" 
+                 alt="JCR Ambiental Logo" 
+                 class="navbar__logo" 
+                 width="128" 
+                 height="72"
+                 loading="eager">
+        </a>
+
+        <!-- Menu Hamburguer -->
+        <button class="overlay-menu-toggler d-lg-none" 
+                type="button" 
+                onclick="openNav()" 
+                aria-label="Abrir menu de navegação"
+                aria-expanded="false">
+            <span class="navbar-toggler-icon">&#9776;</span>
+        </button>
+
+        <!-- Menu Desktop -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarHeaderNav">
+            <ul class="navbar-header-nav navbar-nav w-75 justify-content-start">
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Serviços</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#team">Time</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#logos">Clientes</a>
+                </li>
+            </ul>
+            <ul class="navbar-header-nav navbar-nav w-25 justify-content-end">
+                <li class="nav-item">
+                    <a class="btn btn-outline-light" 
+                       href="https://wa.me/5511987189188" 
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Contato via WhatsApp">
+                        <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" 
+                             alt="WhatsApp"
+                             width="24"
+                             height="24">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Overlay Menu -->
+<div id="myNav" 
+     class="overlay" 
+     role="dialog" 
+     aria-modal="true" 
+     aria-label="Menu de navegação">
+    <a href="javascript:void(0)" 
+       class="closebtn" 
+       onclick="closeNav()"
+       aria-label="Fechar menu">
+        &times;
+    </a>
+    <div class="overlay-content">
+        <a href="#projects">Serviços</a>
+        <a href="#presence">Presença</a>
+        <a href="#team">Time</a>
+        <a href="#logos">Clientes</a>
+        <a href="https://wa.me/5511987189188" 
+           class="btn btn--outline-light" 
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Contato via WhatsApp">
+            <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" 
+                 alt="WhatsApp"
+                 width="24" 
+                 height="24">
+        </a>
+    </div>
+</div>
+
+<!-- Main Content -->
+<main id="main-content" role="main">
+    <!-- Banner Carousel Section -->
+    <section class="section banner mt-5" aria-label="Apresentação institucional">
+        <div class="container-fluid p-5">
+            <div id="about" 
+                 class="carousel slide" 
+                 data-bs-ride="carousel" 
+                 data-bs-interval="5000"
+                 aria-label="Carrossel de apresentação institucional">
+                
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Slide2.PNG" 
+                             class="d-block w-100" 
+                             alt="Missão da JCR Ambiental" 
+                             width="1920"
+                             height="1080"
+                             loading="lazy">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="visually-hidden">Missão da JCR Ambiental</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/Slide3.PNG" 
+                             class="d-block w-100" 
+                             alt="Visão da JCR Ambiental"
+                             width="1920"
+                             height="1080"
+                             loading="lazy">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="visually-hidden">Visão da JCR Ambiental</h2>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="images/Slide4.PNG" 
+                             class="d-block w-100" 
+                             alt="Valores da JCR Ambiental"
+                             width="1920"
+                             height="1080"
+                             loading="lazy">
+                        <div class="carousel-caption d-none d-md-block">
+                            <h2 class="visually-hidden">Valores da JCR Ambiental</h2>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Carousel Controls -->
+                <button class="carousel-control-prev" 
+                        type="button" 
+                        data-bs-target="#about" 
+                        data-bs-slide="prev"
+                        aria-label="Slide anterior">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+
+                <button class="carousel-control-next" 
+                        type="button" 
+                        data-bs-target="#about" 
+                        data-bs-slide="next"
+                        aria-label="Próximo slide">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+
+                <!-- Carousel Indicators -->
+                <div class="carousel-indicators">
+                    <button type="button" 
+                            data-bs-target="#about" 
+                            data-bs-slide-to="0" 
+                            class="active" 
+                            aria-current="true" 
+                            aria-label="Slide 1"></button>
+                    <button type="button" 
+                            data-bs-target="#about" 
+                            data-bs-slide-to="1" 
+                            aria-label="Slide 2"></button>
+                    <button type="button" 
+                            data-bs-target="#about" 
+                            data-bs-slide-to="2" 
+                            aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Projects/Services Section -->
+    <section id="projects" class="section projects mt-5" aria-label="Nossos serviços">
+        <div class="container" style="max-width: 96%;">
+            <div class="row">
+                <!-- HSE Management Card -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <article class="project-card">
+                        <img src="images/0211_Gestao_HSE.jpg" 
+                             class="project-card__image" 
+                             alt="Gestão de HSE - Serviços de gestão em saúde, segurança e meio ambiente"
+                             width="400"
+                             height="250"
+                             loading="lazy">
+                        <div class="project-card__content">
+                            <h2 class="project-card__title">Gestão de HSE</h2>
+                            <ul class="project-card__list">
+                                <li class="project-card__list-item">Mão de obra especializada</li>
+                                <li class="project-card__list-item">Gestão de Segurança, Saúde e Meio Ambiente (HSE)</li>
+                                <li class="project-card__list-item">Gestão de Riscos Operacionais</li>
+                                <li class="project-card__list-item">Gerenciamento Ambiental</li>
+                                <li class="project-card__list-item">Segurança em Distribuição</li>
+                                <li class="project-card__list-item">Segurança de Processos</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Consulting Card -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <article class="project-card">
+                        <img src="images/0221_Consultoria_e_Auditoria.avif" 
+                             class="project-card__image" 
+                             alt="Consultoria e Auditoria - Serviços especializados em avaliação e implementação de soluções"
+                             width="400"
+                             height="250"
+                             loading="lazy">
+                        <div class="project-card__content">
+                            <h2 class="project-card__title">Consultoria e Auditoria</h2>
+                            <ul class="project-card__list">
+                                <li class="project-card__list-item">Diagnósticos e implementação de soluções e EHS</li>
+                                <li class="project-card__list-item">Assistência técnica e judicial</li>
+                                <li class="project-card__list-item">Diagnóstico de Riscos Operacionais</li>
+                                <li class="project-card__list-item">Auditorias sociais e regulatórias</li>
+                                <li class="project-card__list-item">Desenvolvimento de Políticas</li>
+                                <li class="project-card__list-item">Treinamento e Desenvolvimento</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- Technical Reports Card -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <article class="project-card">
+                        <img src="images/0231_Support.png" 
+                             class="project-card__image" 
+                             alt="Laudos e Avaliações Técnicas - Documentação e análises especializadas"
+                             width="400"
+                             height="250"
+                             loading="lazy">
+                        <div class="project-card__content">
+                            <h2 class="project-card__title">Laudos e Avaliações Técnicas</h2>
+                            <ul class="project-card__list">
+                                <li class="project-card__list-item">Requisitos Legais</li>
+                                <li class="project-card__list-item">Identificação e avaliação dos agentes de risco</li>
+                                <li class="project-card__list-item">Elaboração do LTCAT</li>
+                                <li class="project-card__list-item">Análise Ergonômica</li>
+                                <li class="project-card__list-item">LTIP - Laudo Técnico de Insalubridade e Periculosidade</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+
+                <!-- ESG Card -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <article class="project-card">
+                        <img src="images/0241_ESG.jpg" 
+                             class="project-card__image" 
+                             alt="ESG e Gestão Ambiental - Soluções em sustentabilidade e governança"
+                             width="400"
+                             height="250"
+                             loading="lazy">
+                        <div class="project-card__content">
+                            <h2 class="project-card__title">ESG e Gestão Ambiental</h2>
+                            <ul class="project-card__list">
+                                <li class="project-card__list-item">Documento para Gestão Segura de Resíduos</li>
+                                <li class="project-card__list-item">Mapa de restrição de uso de águas subterrânea</li>
+                                <li class="project-card__list-item">Programa de Observação em Segurança Ambiental (POA)</li>
+                                <li class="project-card__list-item">Diagnostico e Implementação de ESG</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Presence Section -->
+    <section id="presence" class="section mt-5" aria-label="Presença nacional">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-3">
+                    <img src="images/030_Presence.png" 
+                         class="img-fluid rounded" 
+                         alt="Mapa ilustrando a presença da JCR Ambiental em 14 estados do Brasil"
+                         width="400"
+                         height="400"
+                         loading="lazy">
+                </div>
+                <div class="col-md-9">
+                    <h2 class="section__title">Presença nacional</h2>
+                    <p class="section__text">
+                        A <strong>JCR Ambiental</strong> já atuou em <strong>14 estados do Brasil</strong>, 
+                        durante os seus <strong>20 anos de experiência</strong> em Segurança, Saúde e 
+                        Meio Ambiente (SSMA), atuando em segmentos como <strong>renováveis</strong>, 
+                        <strong>hidrelétricas</strong>, <strong>agronegócio</strong> e <strong>óleo e gás</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ESG Section -->
+    <section id="esg" class="section mt-5" aria-label="Atuação ESG">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-3">
+                    <img src="images/040_ESG.png" 
+                         class="img-fluid rounded" 
+                         alt="Ilustração representando os pilares ESG: Environmental, Social e Governance"
+                         width="400"
+                         height="400"
+                         loading="lazy">
+                </div>
+                <div class="col-md-9">
+                    <h2 class="section__title">Atuação ESG</h2>
+                    <ul class="section__list">
+                        <li class="section__list-item">
+                            <strong>Diagnóstico e implementação de ESG</strong>
+                            <span class="visually-hidden">- Análise e aplicação de práticas ambientais, sociais e de governança</span>
+                        </li>
+                        <li class="section__list-item">
+                            <strong>Capacitação</strong> para alcançarem resultados e indicadores 
+                            <strong>ESG</strong> de alta performance
+                            <span class="visually-hidden">- Treinamento e desenvolvimento em práticas sustentáveis</span>
+                        </li>
+                        <li class="section__list-item">
+                            <strong>Cursos e palestras</strong> que inspiram e capacitam em <strong>ESG</strong>
+                            <span class="visually-hidden">- Programas educacionais em sustentabilidade e governança</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section team mt-5" aria-label="Nosso time">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-3">
+                    <h2 class="section__title text-left">Nosso time</h2>
+                    <p class="section__text">
+                        Somos Líderes e Especialistas com experiência em multinacionais.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/050_Team.png" 
+                         class="team__image" 
+                         alt="Equipe de especialistas da JCR Ambiental"
+                         width="800"
+                         height="600"
+                         loading="lazy">
+                </div>
+                <div class="col-md-3">
+                    <p class="section__text">
+                        Contamos com <strong>Especialistas em Qualidade, Sustentabilidade, RH, 
+                        Engenharia Industrial, Responsabilidade Social, Supply Chain, Gestão de 
+                        Projetos e Logística</strong>, com <strong>expertise destacada</strong> 
+                        e alinhada à estratégias inovadoras de <strong>governança corporativa</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>

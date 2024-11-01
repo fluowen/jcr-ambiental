@@ -1,437 +1,363 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Primary Meta Tags -->
-    <title>JCR Ambiental - Consultoria em HSE e Gestão Ambiental</title>
-    <meta name="title" content="JCR Ambiental - Consultoria em HSE e Gestão Ambiental">
-    <meta name="description"
-        content="Consultoria especializada em HSE, ESG, Segurança do Trabalho e Gestão Ambiental. 20 anos de experiência em soluções sustentáveis para empresas.">
-    <meta name="keywords"
-        content="HSE, ESG, Gestão Ambiental, Segurança do Trabalho, Consultoria Ambiental, Sustentabilidade, Laudos Técnicos, Auditoria Ambiental, LTCAT, Análise Ergonômica">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.jcrambiental.com.br/">
-    <meta property="og:title" content="JCR Ambiental - Especialistas em HSE e Gestão Ambiental">
-    <meta property="og:description"
-        content="Soluções completas em HSE, ESG e Gestão Ambiental. Experiência em diversos setores: renováveis, hidrelétricas, agronegócio e óleo e gás.">
-    <meta property="og:image" content="images/JCR_Logo.jpeg">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="JCR Ambiental - Consultoria em HSE">
-    <meta name="twitter:description"
-        content="Consultoria especializada em HSE, ESG e Gestão Ambiental. 20 anos de experiência em soluções sustentáveis.">
-    <meta name="twitter:image" content="images/JCR_Logo.jpeg">
-
+    <title>JCR Ambiental</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-
-    <!-- CSS -->
+    <link rel="icon" href="images/00_Logo.png" type="image/png">
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <meta name="description"
+        content="JCR Ambiental é especializada em Gestão de HSE, Consultoria, Auditoria e Gestão Ambiental. Oferecemos soluções personalizadas com foco em eficiência e segurança.">
+    <meta name="keywords"
+        content="Gestão de HSE, Consultoria, Auditoria, Gestão Ambiental, Laudos Técnicos, Segurança do Trabalho, Sustentabilidade, Auditorias regulatórias">
 </head>
 
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-header navbar-expand-lg" role="navigation" aria-label="Menu principal">
-        <div class="navbar__container container-fluid">
-            <!-- Logo -->
-            <a class="navbar-brand" href="#about" aria-label="JCR Ambiental">
-                <img src="images/JCR_Logo.jpeg" alt="JCR Ambiental Logo" class="navbar__logo" width="128" height="72">
-            </a>
-
-            <!-- Menu Hamburguer -->
-            <button class="overlay-menu-toggler d-lg-none" onclick="openNav()" aria-label="Abrir menu de navegação"
-                aria-expanded="false">
-                &#9776;
-            </button>
-
-            <!-- Menu Desktop -->
-            <div class="collapse navbar-collapse" id="navbarHeaderNav">
-                <ul class="navbar__nav navbar-nav">
-                    <li class="nav-item">
-                        <a class="navbar__link" href="#projects">Serviços</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar__link" href="#team">Time</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="navbar__link" href="#logos">Clientes</a>
-                    </li>
-                </ul>
-                <!-- WhatsApp Button -->
-                <div class="ms-auto">
-                    <a class="btn btn--outline-light" href="https://wa.me/5511987189188" target="_blank"
-                        rel="noopener noreferrer" aria-label="Contato via WhatsApp">
-                        <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="WhatsApp" width="24"
-                            height="24">
-                    </a>
+    
+    
+    <!-- Banner -->
+    <section class="banner text-white section section-container mt-5" style="background-color: #ffffff;">
+        <!--<div class="container-fluid position-relative" style="max-width: 96%;">-->
+        <div class="container-fluid p-5">
+            <!-- Updated Carousel -->
+            <div id="about" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/Slide2.PNG" class="d-block w-100" alt="Missão" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Slide3.PNG" class="d-block w-100" alt="Visão" loading="lazy">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/Slide4.PNG" class="d-block w-100" alt="Valores" loading="lazy">
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#about" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#about" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
         </div>
-    </nav>
+    </section>
 
-    <!-- Overlay Menu -->
-    <div id="myNav" class="overlay">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <div class="overlay-content">
-            <a href="#projects">Serviços</a>
-            <a href="#presence">Presença</a>
-            <a href="#team">Time</a>
-            <a href="#logos">Clientes</a>
-            <a href="https://wa.me/5511987189188" class="btn btn--outline-light" target="_blank">
-                <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="WhatsApp">
-            </a>
-        </div>
-    </div>
-
-    <!-- Main Content -->
-    <main id="main-content" role="main">
-        <!-- Banner Carousel Section -->
-        <section class="section banner mt-5" aria-label="Apresentação institucional">
-            <div class="container-fluid p-5">
-                <div id="about" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000"
-                    aria-label="Carrossel de apresentação">
-
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="images/Slide2.PNG" class="d-block w-100" alt="Missão da JCR Ambiental"
-                                loading="lazy">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/Slide3.PNG" class="d-block w-100" alt="Visão da JCR Ambiental"
-                                loading="lazy">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="images/Slide4.PNG" class="d-block w-100" alt="Valores da JCR Ambiental"
-                                loading="lazy">
-                        </div>
-                    </div>
-
-                    <button class="carousel-control-prev" type="button" data-bs-target="#about" data-bs-slide="prev"
-                        aria-label="Slide anterior">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#about" data-bs-slide="next"
-                        aria-label="Próximo slide">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="section projects mt-5" aria-label="Nossos serviços">
-            <div class="container" style="max-width: 96%;">
-                <div class="row">
-                    <!-- HSE Management Card -->
-                    <div class="col-lg-3 col-md-6 mb-4 d-flex">
-                        <article class="project-card">
-                            <img src="images/0211_Gestao_HSE.jpg" class="project-card__image" alt="Gestão de HSE"
-                                loading="lazy">
-                            <div class="project-card__content">
-                                <h2 class="project-card__title">Gestão de HSE</h2>
-                                <ul class="project-card__list">
-                                    <li class="project-card__list-item">Mão de obra especializada</li>
-                                    <li class="project-card__list-item">Gestão de Segurança, Saúde e Meio Ambiente (HSE)
-                                    </li>
-                                    <li class="project-card__list-item">Gestão de Riscos Operacionais</li>
-                                    <li class="project-card__list-item">Gerenciamento Ambiental</li>
-                                    <li class="project-card__list-item">Segurança em Distribuição</li>
-                                    <li class="project-card__list-item">Segurança de Processos</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Consulting Card -->
-                    <div class="col-lg-3 col-md-6 mb-4 d-flex">
-                        <article class="project-card">
-                            <img src="images/0221_Consultoria_e_Auditoria.avif" class="project-card__image"
-                                alt="Consultoria e Auditoria" loading="lazy">
-                            <div class="project-card__content">
-                                <h2 class="project-card__title">Consultoria e Auditoria</h2>
-                                <ul class="project-card__list">
-                                    <li class="project-card__list-item">Diagnósticos e implementação de soluções e EHS
-                                    </li>
-                                    <li class="project-card__list-item">Assistência técnica e judicial</li>
-                                    <li class="project-card__list-item">Diagnóstico de Riscos Operacionais</li>
-                                    <li class="project-card__list-item">Auditorias sociais e regulatórias</li>
-                                    <li class="project-card__list-item">Desenvolvimento de Políticas</li>
-                                    <li class="project-card__list-item">Treinamento e Desenvolvimento</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- Technical Reports Card -->
-                    <div class="col-lg-3 col-md-6 mb-4 d-flex">
-                        <article class="project-card">
-                            <img src="images/0231_Support.png" class="project-card__image"
-                                alt="Laudos e Avaliações Técnicas" loading="lazy">
-                            <div class="project-card__content">
-                                <h2 class="project-card__title">Laudos e Avaliações Técnicas</h2>
-                                <ul class="project-card__list">
-                                    <li class="project-card__list-item">Requisitos Legais</li>
-                                    <li class="project-card__list-item">Identificação e avaliação dos agentes de risco
-                                    </li>
-                                    <li class="project-card__list-item">Elaboração do LTCAT</li>
-                                    <li class="project-card__list-item">Análise Ergonômica</li>
-                                    <li class="project-card__list-item">LTIP - Laudo Técnico de Insalubridade e
-                                        Periculosidade</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-
-                    <!-- ESG Card -->
-                    <div class="col-lg-3 col-md-6 mb-4 d-flex">
-                        <article class="project-card">
-                            <img src="images/0241_ESG.jpg" class="project-card__image" alt="ESG e Gestão Ambiental"
-                                loading="lazy">
-                            <div class="project-card__content">
-                                <h2 class="project-card__title">ESG e Gestão Ambiental</h2>
-                                <ul class="project-card__list">
-                                    <li class="project-card__list-item">Documento para Gestão Segura de Resíduos</li>
-                                    <li class="project-card__list-item">Mapa de restrição de uso de águas subterrânea
-                                    </li>
-                                    <li class="project-card__list-item">Programa de Observação em Segurança Ambiental
-                                        (POA)</li>
-                                    <li class="project-card__list-item">Diagnostico e Implementação de ESG</li>
-                                </ul>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Presence Section -->
-        <section id="presence" class="section mt-5" aria-label="Presença nacional">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-3">
-                        <img src="images/030_Presence.png" class="img-fluid rounded"
-                            alt="Mapa de presença da JCR Ambiental" loading="lazy">
-                    </div>
-                    <div class="col-md-9">
-                        <h2 class="section__title">Presença nacional</h2>
-                        <p class="section__text">
-                            A <strong>JCR Ambiental</strong> já atuou em <strong>14 estados do Brasil</strong>,
-                            durante os seus <strong>20 anos de experiência</strong> em Segurança, Saúde e
-                            Meio Ambiente (SSMA), atuando em segmentos como <strong>renováveis</strong>,
-                            <strong>hidrelétricas</strong>, <strong>agronegócio</strong> e <strong>óleo e gás</strong>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- ESG Section -->
-        <section id="esg" class="section mt-5" aria-label="Atuação ESG">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-3">
-                        <img src="images/040_ESG.png" class="img-fluid rounded" alt="Ilustração de ESG" loading="lazy">
-                    </div>
-                    <div class="col-md-9">
-                        <h2 class="section__title">Atuação ESG</h2>
-                        <ul class="section__list">
-                            <li>Diagnóstico e implementação de <strong>ESG</strong></li>
-                            <li><strong>Capacitação</strong> para alcançarem resultados e indicadores
-                                <strong>ESG</strong> de alta performance</li>
-                            <li><strong>Cursos e palestras</strong> que inspiram e capacitam em <strong>ESG</strong>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Team Section -->
-        <section id="team" class="section team mt-5" aria-label="Nosso time">
-            <div class="container">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-md-3">
-                        <h2 class="section__title text-left">Nosso time</h2>
-                        <p>Somos Líderes e Especialistas com experiência em multinacionais.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <img src="images/050_Team.png" class="team__image" alt="Equipe JCR Ambiental" loading="lazy">
-                    </div>
-                    <div class="col-md-3">
-                        <p>Contamos com <strong>Especialistas em Qualidade, Sustentabilidade, RH,
-                                Engenharia Industrial, Responsabilidade Social, Supply Chain, Gestão de
-                                Projetos e Logística</strong>, com <strong>expertise destacada</strong>
-                            e alinhada à estratégias inovadoras de <strong>governança corporativa</strong>.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Clients Carousel Section -->
-        <section id="logos" class="section mt-5" aria-label="Nossos clientes">
-            <div class="container">
-                <div id="carouselClients" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                    <div class="carousel-inner">
-                        <!-- Página 1 -->
-                        <div class="carousel-item active">
-                            <div class="d-flex justify-content-around">
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0601_Logo.png" class="img-fluid logo-client"
-                                        alt="Vortex Operações e Sondagens" loading="lazy"
-                                        style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0602_Logo.png" class="img-fluid logo-client"
-                                        alt="Pinheiro e Associados Advogado" loading="lazy"
-                                        style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0603_Logo.png" class="img-fluid logo-client" alt="G2L Logistica"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0604_Logo.png" class="img-fluid logo-client" alt="Archroma"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0605_Logo.png" class="img-fluid logo-client" alt="Anglo American"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Página 2 -->
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-around">
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0606_Logo.png" class="img-fluid logo-client" alt="VBI Real State"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0607_Logo.png" class="img-fluid logo-client" alt="CEATE"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0608_Logo.png" class="img-fluid logo-client" alt="Rede Globo"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0609_Logo.png" class="img-fluid logo-client" alt="GE Oil & Gas"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0610_Logo.png" class="img-fluid logo-client" alt="GE"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Página 3 -->
-                        <div class="carousel-item">
-                            <div class="d-flex justify-content-around">
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0611_Logo.png" class="img-fluid logo-client"
-                                        alt="Andreani Logistica" loading="lazy"
-                                        style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0612_Logo.png" class="img-fluid logo-client" alt="Safra"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0613_Logo.png" class="img-fluid logo-client" alt="Baker Hughes"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0614_Logo.png" class="img-fluid logo-client" alt="Voltalia"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                                <div class="card d-flex align-items-center justify-content-center"
-                                    style="background-color: #363636; width: 180px;">
-                                    <img src="images/0615_Logo.png" class="img-fluid logo-client" alt="Acerlor Mittal"
-                                        loading="lazy" style="height: 100px; object-fit: contain;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselClients"
-                        data-bs-slide="prev" aria-label="Clientes anteriores">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselClients"
-                        data-bs-slide="next" aria-label="Próximos clientes">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    </button>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer" role="contentinfo">
-        <div class="container">
+    <section id="projects" class="section section-container mt-5" style="background-color: #ffffff;">
+        <div class="container" style="max-width: 96%;"> <!-- Define 96% da largura para 2% de borda lateral -->
             <div class="row">
-                <div class="col-md-4">
-                    <h3 class="footer__title">Sobre Nós</h3>
-                    <p>JCR Ambiental é uma empresa especializada em Gestão de HSE,
-                        Consultoria e Auditoria, com mais de 20 anos de experiência no mercado.</p>
+                <!-- Service 1: Gestão de HSE -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="images/0211_Gestao_HSE.jpg" class="card-img-top project-img" alt="Gestão de HSE"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Gestão de HSE</h5>
+                            <ul style="list-style-type:square">
+                                <li>Mão de obra especializada</li>
+                                <li>Gestão de Segurança, Saúde e Meio Ambiente (HSE)</li>
+                                <li>Gestão de Riscos Operacionais</li>
+                                <li>Gerenciamento Ambiental</li>
+                                <li>Segurança em Distribuição</li>
+                                <li>Segurança de Processos</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h3 class="footer__title">Links Rápidos</h3>
-                    <ul class="footer__list">
-                        <li><a href="#about" class="footer__link">JCR Ambiental</a></li>
-                        <li><a href="#projects" class="footer__link">Serviços</a></li>
-                        <li><a href="#team" class="footer__link">Time</a></li>
-                        <li><a href="#logos" class="footer__link">Clientes</a></li>
-                        <li><a href="https://wa.me/5511987189188" class="footer__link" target="_blank"
-                                rel="noopener noreferrer">Fale Conosco</a></li>
+
+                <!-- Service 2: Consultoria e Auditoria -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="images/0221_Consultoria_e_Auditoria.avif" class="card-img-top project-img"
+                            alt="Consultoria e Auditoria" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Consultoria e Auditoria</h5>
+                            <ul style="list-style-type:square">
+                                <li>Diagnósticos e implementação de soluções e EHS</li>
+                                <li> Assistência técnica e judicial</li>
+                                <li>Diagnóstico de Riscos Operacionais</li>
+                                <li>Auditorias sociais e regulatórias</li>
+                                <li>Desenvolvimento de Políticas</li>
+                                <li>Treinamento e Desenvolvimento</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 3: Laudos e Avaliações Técnicas -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="images/0231_Support.png" class="card-img-top project-img"
+                            alt="Laudos e Avaliações Técnicas" loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Laudos e Avaliações Técnicas</h5>
+                            <ul style="list-style-type:square">
+                                <li>Requisitos Legais</li>
+                                <li>Identificação e avaliação dos agentes de risco</li>
+                                <li>Elaboração do Laudo Técnico das Condições da Atividade do Trabalho (LTCAT)</li>
+                                <li>Análise Ergonômica</li>
+                                <li>LTIP – Laudo Técnico de Insalubridade (NR 15) e Periculosidade (NR 16)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Service 4: EGS e Gestão Ambiental -->
+                <div class="col-lg-3 col-md-6 mb-4 d-flex">
+                    <div class="card flex-fill">
+                        <img src="images/0241_ESG.jpg" class="card-img-top project-img" alt="EGS e Gestão Ambiental"
+                            loading="lazy">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">EGS e Gestão Ambiental</h5>
+                            <ul style="list-style-type:square">
+                                <li>Documento para Gestão Segura de Resíduos</li>
+                                <li>Mapa de restrição de uso de águas subterrânea</li>
+                                <li>E Programa de Observação em Segurança Ambiental (POA)</li>
+                                <li>Diagnostico e Implementação de ESG</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="presence" class="section section-container mt-5" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-3">
+                    <img src="images/030_Presence.png" class="img-fluid rounded" alt="Preseça JCR Ambiental"
+                        loading="lazy">
+                </div>
+                <div class="col-md-9">
+                    <h2 text-white>Presença nacional</h2>
+                    <p text-white style="text-align:justify">
+                        A <strong>JCR Ambiental</strong> já atuou em <strong>14 estados do Brasil</strong>, durante os
+                        seus
+                        <strong>20 anos de experiência</strong> em Segurança, Saúde e Meio Ambiente (SSMA), atuando em
+                        segmentos como <strong>renováveis</strong>, <strong>hidrelétricas</strong>,
+                        <strong>agronegócio</strong> e <strong>óleo e gás</strong>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Atuação ESG -->
+    <section id="esg" class="section section-container mt-5" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-3">
+                    <img src="images/040_ESG.png" class="img-fluid rounded" alt="Preseça JCR Ambiental" loading="lazy">
+                </div>
+                <div class="col-md-9">
+                    <h2 text-white>Atuação ESG</h2>
+                    <ul style="list-style-type:square">
+                        <li>Diagnóstico e implementação de <strong>ESG</strong></li>
+                        <li><strong>Capacitação</strong>para alcançarem resultados e indicadores <strong>ESG</strong> de
+                            alta performance</li>
+                        <li><strong>Cursos e palestras</strong> que inspiram e capacitam em <strong>ESG</strong></li>
                     </ul>
                 </div>
-                <div class="col-md-4">
-                    <h3 class="footer__title">Redes Sociais</h3>
-                    <div class="footer__social">
-                        <a href="#" class="footer__link me-3" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="#" class="footer__link me-3" aria-label="Instagram">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="footer__link me-3" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Nosso Time -->
+    <section id="team" class="section section-container mt-5" style="background-color: #ffffff;">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-md-3">
+                    <h2 class="text-left">Nosso time</h2>
+                    <p class="lead" style="text-align:justify">
+                        Somos <strong></strong>Líderes e Especialistas</strong> com experiência em multinacionais.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="images/050_Team.png" class="img-fluid rounded" alt="Nosso time" loading="lazy">
+                </div>
+                <div class="col-md-3">
+                    <p style="text-align:justify">
+                        Contamos com <strong>Especialistas em Qualidade, Sustentabilidade, RH, Engenharia Industrial,
+                            Responsabilidade Social, Supply Chain, Gestão de Projetos e Logística
+                        </strong>, com <strong>expertise destacada</strong> e alinhada à estratégias inovadoras
+                        de <strong>governança corporativa</strong>.
+                    </p>
                 </div>
             </div>
-            <div class="footer__copyright">
+        </div>
+    </section>
+
+    <!-- Seção Carrossel Logos -->
+    <section id="logos" class="section section-container mt-5" style="background-color: #ffffff;">
+        <div class="container">
+            <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <!-- Página 1 -->
+                    <div class="carousel-item active">
+                        <div class="d-flex justify-content-around">
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0601_Logo.png" class="img-fluid logo-client"
+                                    alt="Vortex Operações e Sondagens" loading="lazy"
+                                    style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0602_Logo.png" class="img-fluid logo-client"
+                                    alt="Pinheiro e Associados Advogado" loading="lazy"
+                                    style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0603_Logo.png" class="img-fluid logo-client" alt="G2L Logistica"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0604_Logo.png" class="img-fluid logo-client" alt="Archroma"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0605_Logo.png" class="img-fluid logo-client" alt="Anglo American"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Página 2 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-around">
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0606_Logo.png" class="img-fluid logo-client" alt="VBI Real State"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0607_Logo.png" class="img-fluid logo-client" alt="CEATE" loading="lazy"
+                                    style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0608_Logo.png" class="img-fluid logo-client" alt="Rede Globo"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0609_Logo.png" class="img-fluid logo-client" alt="GE Oil & Gas"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0610_Logo.png" class="img-fluid logo-client" alt="GE" loading="lazy"
+                                    style="height: 100px; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Página 3 -->
+                    <div class="carousel-item">
+                        <div class="d-flex justify-content-around">
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0611_Logo.png" class="img-fluid logo-client" alt="Andreani Logistica"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0612_Logo.png" class="img-fluid logo-client" alt="Safra" loading="lazy"
+                                    style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0613_Logo.png" class="img-fluid logo-client" alt="Baker Hughes"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0614_Logo.png" class="img-fluid logo-client" alt="Voltalia"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                            <div class="card d-flex align-items-center justify-content-center"
+                                style="background-color: #363636; width: 180px;">
+                                <img src="images/0615_Logo.png" class="img-fluid logo-client" alt="Acerlor Mittal"
+                                    loading="lazy" style="height: 100px; object-fit: contain;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer section id="footer" class="section section-container mt-5 py-4 bg-dark text-white">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>Sobre Nós</h5>
+                    <p>JCR Ambiental é uma empresa especializada em Gestão de HSE, Consultoria e Auditoria, com mais de
+                        20 anos de experiência no mercado.</p>
+                </div>
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Links Rápidos</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#about" class="text-white">JCR Ambiental</a></li>
+                        <li><a href="#projects" class="text-white">Serviços</a></li>
+                        <li><a href="#team" class="text-white">Time</a></li>
+                        <li><a href="#logos" class="text-white">Clientes</a></li>
+                        <li><a href="https://wa.me/5511987189188" class="text-white" target="_blank">Fale Conosco</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Social Media Icons -->
+                <div class="col-md-4">
+                    <h5>Redes Sociais</h5>
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i> Facebook</a><br>
+                    <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i> Instagram</a><br>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                </div>
+            </div>
+            <div class="text-center pt-3">
                 <p>&copy; 2024 JCR Ambiental - Todos os direitos reservados</p>
             </div>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/your-kit-code.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="offcanvas-navbar.js"></script>
+
+    <script>
+        function openOverlayMenu() {
+            document.getElementById("overlayMenu").style.width = "100%";
+        }
+
+        function closeOverlayMenu() {
+            document.getElementById("overlayMenu").style.width = "0%";
+        }
+    </script>
+
 </body>
 
 </html>

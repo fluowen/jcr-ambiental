@@ -1,5 +1,5 @@
 // IIFE para evitar poluição do escopo global
-(function() {
+(function () {
     'use strict';
 
     // Constantes para configuração
@@ -24,6 +24,12 @@
         classes: {
             hidden: 'hidden',
             active: 'active'
+        },
+        styles: {
+            overlay: {
+                openWidth: '100%',
+                closedWidth: '0%'
+            }
         }
     };
 
@@ -56,11 +62,11 @@
 
         open() {
             if (!DOM.overlay || this.isOpen) return;
-            
+
             this.isOpen = true;
-            DOM.overlay.style.width = '100%';
-            document.body.style.overflow = 'hidden';
-            
+            DOM.overlay.style.width = CONFIG.styles.overlay.openWidth;
+            document.body.style.overflow = 'hidden'; // Previne scroll quando menu está aberto
+
             // Adiciona listeners de eventos
             document.addEventListener('keydown', this.handleKeyPress);
             DOM.overlay.addEventListener('click', this.handleOverlayClick);
@@ -68,11 +74,11 @@
 
         close() {
             if (!DOM.overlay || !this.isOpen) return;
-            
+
             this.isOpen = false;
-            DOM.overlay.style.width = '0%';
-            document.body.style.overflow = '';
-            
+            DOM.overlay.style.width = CONFIG.styles.overlay.closedWidth;
+            document.body.style.overflow = ''; // Restaura scroll
+
             // Remove listeners de eventos
             document.removeEventListener('keydown', this.handleKeyPress);
             DOM.overlay.removeEventListener('click', this.handleOverlayClick);
@@ -91,97 +97,26 @@
             }
         },
 
-        init() {
+        setupEventListeners() {
             if (!DOM.overlayLinks) return;
 
             // Adiciona evento de clique para cada link do overlay
             DOM.overlayLinks.forEach(link => {
                 link.addEventListener('click', () => {
-                    // Pequeno delay para melhor UX
                     setTimeout(() => this.close(), 150);
                 });
             });
-        }
-    };
 
-    // Controlador dos Carrosséis
-    const CarouselController = {
+            // Adiciona listener para o botão de fechar
+            if (DOM.navbar.closeBtn) {
+                DOM.navbar.closeBtn.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    this.close();
+                });
+            }
+        },
+
         init() {
-            this.initializeCarousels();
             this.setupEventListeners();
-        },
-
-        initializeCarousels() {
-            // Inicializa carrossel principal
-            if (DOM.carousels.main) {
-                new bootstrap.Carousel(DOM.carousels.main, {
-                    interval: CONFIG.animations.carouselInterval,
-                    touch: true // Habilita swipe em dispositivos touch
-                });
-            }
-
-            // Inicializa carrossel de clientes
-            if (DOM.carousels.clients) {
-                new bootstrap.Carousel(DOM.carousels.clients, {
-                    interval: CONFIG.animations.carouselInterval,
-                    touch: true
-                });
-            }
-        },
-
-        setupEventListeners() {
-            // Pausa carrossel ao hover (opcional)
-            [DOM.carousels.main, DOM.carousels.clients].forEach(carousel => {
-                if (!carousel) return;
-
-                carousel.addEventListener('mouseenter', () => {
-                    bootstrap.Carousel.getInstance(carousel).pause();
-                });
-
-                carousel.addEventListener('mouseleave', () => {
-                    bootstrap.Carousel.getInstance(carousel).cycle();
-                });
-            });
         }
     };
-
-    // Controlador de Navegação Suave
-    const SmoothScrollController = {
-        init() {
-            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-                anchor.addEventListener('click', this.handleClick);
-            });
-        },
-
-        handleClick(event) {
-            event.preventDefault();
-            const targetId = this.getAttribute('href');
-            const targetElement = document.querySelector(targetId);
-
-            if (targetElement) {
-                targetElement.scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            }
-        }
-    };
-
-    // Inicialização
-    function init() {
-        // Inicializa cache DOM
-        DOM.init();
-
-        // Inicializa componentes
-        OverlayController.init();
-        CarouselController.init();
-        SmoothScrollController.init();
-
-        // Expõe funções necessárias globalmente
-        window.openNav = () => OverlayController.open();
-        window.closeNav = () => OverlayController.close();
-    }
-
-    // Carrega quando o DOM estiver pronto
-    document.addEventListener('DOMContentLoaded', init);
-})();

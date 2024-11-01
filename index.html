@@ -19,8 +19,65 @@
 </head>
 
 <body>
-    
-    
+    <!-- Navbar -->
+    <nav class="navbar-header navbar-expand-lg" style="background-color: #1E1F23;">
+        <div class="navbar__container container-fluid">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#about" aria-label="JCR Ambiental">
+                <img src="images/JCR_Logo.jpeg" alt="JCR Ambiental Logo" class="navbar__logo" width="128" height="72"
+                    loading="eager">
+            </a>
+
+            <!-- Menu Hamburguer -->
+            <button class="overlay-menu-toggler d-lg-none" type="button" onclick="openNav()"
+                aria-label="Abrir menu de navegação" aria-expanded="false">
+                <span class="navbar-toggler-icon">&#9776;</span>
+            </button>
+
+            <!-- Menu Desktop -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarHeaderNav">
+                <ul class="navbar-header-nav navbar-nav w-75 justify-content-start">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#team">Time</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#logos">Clientes</a>
+                    </li>
+                </ul>
+                <ul class="navbar-header-nav navbar-nav w-25 justify-content-end">
+                    <li class="nav-item">
+                        <a class="btn btn-outline-light" href="https://wa.me/5511987189188" target="_blank"
+                            rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+                            <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="WhatsApp"
+                                width="24" height="24">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay Menu -->
+    <div id="myNav" class="overlay" role="dialog" aria-modal="true" aria-label="Menu de navegação">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Fechar menu">
+            &times;
+        </a>
+        <div class="overlay-content">
+            <a href="#projects">Serviços</a>
+            <a href="#presence">Presença</a>
+            <a href="#team">Time</a>
+            <a href="#logos">Clientes</a>
+            <a href="https://wa.me/5511987189188" class="btn btn--outline-light" target="_blank"
+                rel="noopener noreferrer" aria-label="Contato via WhatsApp">
+                <img src="https://static.whatsapp.net/rsrc.php/yZ/r/JvsnINJ2CZv.svg" alt="WhatsApp" width="24"
+                    height="24">
+            </a>
+        </div>
+    </div>
+
     <!-- Banner -->
     <section class="banner text-white section section-container mt-5" style="background-color: #ffffff;">
         <!--<div class="container-fluid position-relative" style="max-width: 96%;">-->

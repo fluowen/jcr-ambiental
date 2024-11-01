@@ -1,0 +1,269 @@
+body {
+    padding-top: 70px;
+}
+
+/* Navbar */
+.navbar-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    height: 10vh;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgb(128, 128, 128); /* 20% transparency */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.navbar-header-logo {
+    max-height: 60px; /* Adjust the height to fit within the navbar */
+    width: auto;      /* Ensure aspect ratio is maintained */
+    margin-right: 20px; /* Space between logo and other navbar items */
+    color: white;
+}
+
+.navbar-header-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+    width: 60%;
+}
+
+.navbar-header-nav .nav-link {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-left: 15px; /* Space between links */
+    margin-right: 15px; /* Space between links */
+}
+
+.navbar-header-nav .nav-link:hover {
+    color: #5EB71B;
+}
+
+.btn-contact-navbar {
+    background-color: #5EB71B;
+    border-color: #5EB71B;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.btn-contact-navbar:hover {
+    background-color: #4DA114;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) {
+    .navbar-header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .navbar-header-logo {
+        height: 50px;
+    }
+
+    .navbar-header-nav {
+        display: none; /* Hide normal links on small screens */
+        justify-content: space-between;
+        width: 80%; /* Adjust width to better distribute the items */
+        font-family: 'Montserrat', sans-serif;    
+    }
+
+    .navbar-header-toggler {
+        display: block; /* Show the overlay menu button */
+        color: white;
+    }
+
+    .btn-contact-navbar {
+        font-size: 0.9rem;
+        padding: 5px 10px;
+    }
+    .overlay {
+        display: block; /* Ensure overlay works on small screens */
+    }
+}
+
+.navbar-toggler-icon {
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" fill="#92E016"><path stroke="rgba(0, 0, 0, 0.5)" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"/></svg>');
+}
+
+/* Show links on larger screens and hide the hamburger */
+@media (min-width: 993px) {
+    .overlay-menu-toggler {
+        display: none; /* Hide overlay menu button on large screens */
+    }
+
+    .navbar-header-toggler {
+        display: none;
+    }
+
+    .navbar-header-nav {
+        display: flex;
+    }
+}
+
+/* Banner */
+.banner {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+#carousel-banner {
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#carousel-banner img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Clients Section */
+#clients {
+    background-color: #A2A2A2;
+}
+
+#clients h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 36px;
+    color: #ffffff;
+}
+
+.logo-client {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo-client:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #848484;
+    color: white;
+}
+
+footer h5 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+footer p, footer a {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+footer .fab {
+    margin-right: 10px;
+}
+
+footer .text-center {
+    border-top: 1px solid #ccc;
+    padding-top: 15px;
+}
+
+/* Overlay Menu */
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay-content a {
+    padding: 8px 0;
+    text-decoration: none;
+    font-size: 36px;
+    color: #92E016;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay-content a:hover {
+    color: white;
+}
+
+.closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: white;
+}
+
+/* Media Queries */
+@media (max-width: 992px) {
+    .overlay-menu-toggler {
+        display: block;
+    }
+
+    .navbar-header-nav {
+        display: none;
+    }
+
+    .overlay {
+        display: block;
+    }
+}
+
+@media (min-width: 993px) {
+    .overlay-menu-toggler {
+        display: none;
+    }
+
+    .navbar-header-nav {
+        display: flex;
+    }
+}
+
+.project-img {
+    height: 250px; /* Uniform height */
+    object-fit: cover; /* Ensures images scale properly */
+    width: 100%; /* Forces all images to fit the card */
+}
+
+.card-title {
+    font-size: 1.5rem;
+}
+.card-text {
+    font-size: 1rem;
+}
+
+li::marker {
+    color: #5EB71B;
+  }
